@@ -285,6 +285,32 @@
       </tags>
   </entry>
   <entry>
+    <title>VAX &amp;&amp; VMS</title>
+    <url>/posts/37d5a867.html</url>
+    <content><![CDATA[<h2 id="VAX"><a href="#VAX" class="headerlink" title="VAX"></a>VAX</h2><p>DEC公司开发的中端服务器计算机<br>按照DEC1978年的PDP-11标准<br>搭载当时最新的VMS系统<br>采用32位处理器</p>
+<span id="more"></span>
+
+<h3 id="Visual-Assist-X-（番茄助手）"><a href="#Visual-Assist-X-（番茄助手）" class="headerlink" title="Visual Assist X （番茄助手）"></a>Visual Assist X （番茄助手）</h3><p> Visual Assist X 是 Microsoft Visual studio的插件<br> 支持VS 2002-2017 ， 并支持c/c++,c#,ASP,VB,java.HTML等语言<br> 这块插件提供了很多方便快捷且强大的功能<br> 例如:<br>    代码重构<br>    智能提示<br>    代码检索<br>    等等…</p>
+<h3 id="Virtual-Address-Extender"><a href="#Virtual-Address-Extender" class="headerlink" title="Virtual Address Extender"></a>Virtual Address Extender</h3><p>1978 年 DEC公司建立第一个基于VAX (virtual address extension) 虚拟地址扩展的计算机体系<br>它是DEC计算机系统特有的复杂指令计算(CISC)体系结构的计算机VAX11,780.</p>
+<p>VAX计算机使用多用户系统<br>采用的网络应用包括</p>
+<ol>
+<li>通信终端协议(CTERM) : DNA为VMS系统提供的虚拟终端使用该协议，为LAT的可选协议</li>
+<li>分布式命名服务(DNS)</li>
+<li>数据存储协议(DAP)</li>
+<li>分布式文件系统(DFS)</li>
+<li>分布式队列服务(DQS)</li>
+</ol>
+<p>VAX计算机专用的终端只能用在VAX系统上，这种唯一性和不兼容性保持了它的安全基础<br>在pc机上可以使用VT100终端仿真程序和VAX系统获取连接</p>
+<h2 id="VMS-openVms"><a href="#VMS-openVms" class="headerlink" title="VMS(openVms)"></a>VMS(openVms)</h2><p>应用在VAX 32位计算机上的操作系统<br>open vms也可以通过一些特殊的软件运行在windows NT 服务器上<br>open vms支持开放标准的b便携式操作系统界面的命令集和C语言程序接口<br>运行在VAX BSD Unix 的系统是黑客们一个最爱因为它特别大且友好的编程器汇编的指令集</p>
+]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>VAX&amp;&amp;VMS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HEXO-TagPlugins-快速插入特定内容</title>
     <url>/posts/1946bffe.html</url>
     <content><![CDATA[<div class="note default"><ul>
@@ -368,32 +394,6 @@
       </tags>
   </entry>
   <entry>
-    <title>VAX &amp;&amp; VMS</title>
-    <url>/posts/37d5a867.html</url>
-    <content><![CDATA[<h2 id="VAX"><a href="#VAX" class="headerlink" title="VAX"></a>VAX</h2><p>DEC公司开发的中端服务器计算机<br>按照DEC1978年的PDP-11标准<br>搭载当时最新的VMS系统<br>采用32位处理器</p>
-<span id="more"></span>
-
-<h3 id="Visual-Assist-X-（番茄助手）"><a href="#Visual-Assist-X-（番茄助手）" class="headerlink" title="Visual Assist X （番茄助手）"></a>Visual Assist X （番茄助手）</h3><p> Visual Assist X 是 Microsoft Visual studio的插件<br> 支持VS 2002-2017 ， 并支持c/c++,c#,ASP,VB,java.HTML等语言<br> 这块插件提供了很多方便快捷且强大的功能<br> 例如:<br>    代码重构<br>    智能提示<br>    代码检索<br>    等等…</p>
-<h3 id="Virtual-Address-Extender"><a href="#Virtual-Address-Extender" class="headerlink" title="Virtual Address Extender"></a>Virtual Address Extender</h3><p>1978 年 DEC公司建立第一个基于VAX (virtual address extension) 虚拟地址扩展的计算机体系<br>它是DEC计算机系统特有的复杂指令计算(CISC)体系结构的计算机VAX11,780.</p>
-<p>VAX计算机使用多用户系统<br>采用的网络应用包括</p>
-<ol>
-<li>通信终端协议(CTERM) : DNA为VMS系统提供的虚拟终端使用该协议，为LAT的可选协议</li>
-<li>分布式命名服务(DNS)</li>
-<li>数据存储协议(DAP)</li>
-<li>分布式文件系统(DFS)</li>
-<li>分布式队列服务(DQS)</li>
-</ol>
-<p>VAX计算机专用的终端只能用在VAX系统上，这种唯一性和不兼容性保持了它的安全基础<br>在pc机上可以使用VT100终端仿真程序和VAX系统获取连接</p>
-<h2 id="VMS-openVms"><a href="#VMS-openVms" class="headerlink" title="VMS(openVms)"></a>VMS(openVms)</h2><p>应用在VAX 32位计算机上的操作系统<br>open vms也可以通过一些特殊的软件运行在windows NT 服务器上<br>open vms支持开放标准的b便携式操作系统界面的命令集和C语言程序接口<br>运行在VAX BSD Unix 的系统是黑客们一个最爱因为它特别大且友好的编程器汇编的指令集</p>
-]]></content>
-      <categories>
-        <category>服务器</category>
-      </categories>
-      <tags>
-        <tag>VAX&amp;&amp;VMS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git add -A出现嵌入式仓库错误</title>
     <url>/posts/b1520caa.html</url>
     <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>github 仓库已经清空，现在重新将本地文件上传备份，但是在add -A 操作时提示正在加入嵌入式仓库<br>git 给我推荐的两个操作分别是:</p>
@@ -430,6 +430,25 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>arch linux 更新</title>
+    <url>/posts/4cce837f.html</url>
+    <content><![CDATA[<p>linux 更新及一些已装的软件插件更新，本文只做备忘</p>
+<span id="more"></span>
+<h2 id="Arch-Linux-pacman更新"><a href="#Arch-Linux-pacman更新" class="headerlink" title="Arch Linux pacman更新"></a><code>Arch Linux pacman</code>更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo pacman -Syu</span><br></pre></td></tr></table></figure>
+
+<h2 id="bloghexo-amp-amp-插件"><a href="#bloghexo-amp-amp-插件" class="headerlink" title="bloghexo &amp;&amp; 插件"></a><code>blog</code>hexo &amp;&amp; 插件</h2><h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a><code>hexo</code></h3><figure class="highlight plain"><figcaption><span>没有插件，安装插件，cd 进blog目录</span></figcaption><table><tr><td class="code"><pre><span class="line">$ npm-check</span><br><span class="line">$ npm-upgrade</span><br></pre></td></tr></table></figure>
+
+<h3 id="npm"><a href="#npm" class="headerlink" title="npm"></a><code>npm</code></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo npm install -g npm</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>arch</category>
+      </categories>
+      <tags>
+        <tag>arch</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo next主题配置</title>
@@ -485,25 +504,6 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>arch linux 更新</title>
-    <url>/posts/4cce837f.html</url>
-    <content><![CDATA[<p>linux 更新及一些已装的软件插件更新，本文只做备忘</p>
-<span id="more"></span>
-<h2 id="Arch-Linux-pacman更新"><a href="#Arch-Linux-pacman更新" class="headerlink" title="Arch Linux pacman更新"></a><code>Arch Linux pacman</code>更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo pacman -Syu</span><br></pre></td></tr></table></figure>
-
-<h2 id="bloghexo-amp-amp-插件"><a href="#bloghexo-amp-amp-插件" class="headerlink" title="bloghexo &amp;&amp; 插件"></a><code>blog</code>hexo &amp;&amp; 插件</h2><h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a><code>hexo</code></h3><figure class="highlight plain"><figcaption><span>没有插件，安装插件，cd 进blog目录</span></figcaption><table><tr><td class="code"><pre><span class="line">$ npm-check</span><br><span class="line">$ npm-upgrade</span><br></pre></td></tr></table></figure>
-
-<h3 id="npm"><a href="#npm" class="headerlink" title="npm"></a><code>npm</code></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo npm install -g npm</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>arch</category>
-      </categories>
-      <tags>
-        <tag>arch</tag>
       </tags>
   </entry>
   <entry>
@@ -564,6 +564,44 @@
       </categories>
   </entry>
   <entry>
+    <title>三体</title>
+    <url>/posts/1a772824.html</url>
+    <content><![CDATA[<h2 id="三体小说–刘慈溪"><a href="#三体小说–刘慈溪" class="headerlink" title="三体小说–刘慈溪"></a>三体小说–刘慈溪</h2><blockquote>
+<p>第一部   《三体》<br>第二部 《黑暗森林》<br>第三部 《死神永生》</p>
+</blockquote>
+<p>  每一次阅读三部曲，都有一种奇妙的回味，或对于文中人物的个人观点的细微改变，或对于所处世界观点的颠覆，<br>小说每一段都值得细细品尝，读完三部曲居然会发现似乎站在宏观的角度来看我们很难去判断，到底文中所描述的人类文明的下场是谁的责任，<br>因为站在宇宙的角度，这一切似乎是理所当然，完全符合宇宙公理。<br>  这是我第三次读三体小说了，碰巧今天在bilibili上写了一个评论，所以打算记录下来。这是以我个人的观点阐述我目前对整部小说的理解。</p>
+<span id="more"></span>
+
+<ul>
+<li><p>评论是这样的:</p>
+<ul>
+<li><p>层主:<br>《三体》系列科幻小说究竟多牛？<br>《三体》导读一书中评价道:<br>文学家不可能有这么逼真的技术描写，<br>科学家不可能有这么极致的道德追问，<br>哲学家不可能有这么恣肆的天马行空，<br>《三体》却同时具备了这些特色。</p>
+</li>
+<li><p>其下一位朋友的品论:<br>换个角度:<br>文笔不行，硬伤不少，深度不够[doge]</p>
+</li>
+<li><p>我的回复并没有针对任何人任何观点，只是因为看到这位朋友的回复有感而发.</p>
+<blockquote>
+<p>【】中是我现在想到，加进去的<br>相反我看到了大刘这三种的终极，这是我站在人和我自己的角度考虑的回答:<br>这些人物体现了人类文明的内在，不仅仅是大刘自己的精神追求，文中多次<br>表现了整个人类世界的傲慢，很大的具象化了当今的舆论社会三观；【还描<br>述了几段情节跌宕的爱情故事】还有不失浪漫硬核的星星和小宇宙做礼物，<br>曲折的爱情故事，谁能想到云天明最后居然和AA跑了!!!，很多人说程心是<br>圣母x，如果不是她人类就不会如此下场，但恰恰相反程心给人类带来的是心<br>灵上的救赎，母性在生命的意义是具有很高的抽象意义，一种不太聪明的大爱，<br>在第三部最后留下金鱼生态球的描写中，虽然我们也可能猜到一种可能的结局，<br>但是这又何尝不是这冰冷宇宙中的一丝暖意，做人又何尝不是追求一种无愧于心<br>的态度，把对错交给时间去评判。这不是为了体现人类的本质而是生命的意义，<br>规律是无情的，生命对于生存也是在DNA中映刻的本能，但在这一切之上还有更<br>高级的东西吗?</p>
+</blockquote>
+<p>在科学上不用说，这已经是终极浪漫了！探究世界真理，宇宙尽头，生命的本质。<br>贯穿三部曲中，从来不缺少人类对宇宙中位置规律的探寻，科技是生存的第一<br>原力，生存离不开科学技术的发展，因为现实中宇宙大自然比书中可能要更加<br>残酷。人类文明面临重大危机表现的那种对知识的渴求是映刻在DNA中的，技术<br>爆炸是存在我们生活中息息相关的，百年以前和百年以后，这是独属文明生存的<br>浪漫。也许我们的子孙后代也会在647号小宇宙来一场极致的浪漫邂逅，又或者和<br>某个未知文明来一次宇宙的世纪旅行。人类的最终旅途是星辰大海！</p>
+<p>哲学太过隐晦深刻，我难以用我所知来描述我的感受，可能会很苍白。深究一切<br>根源本质救赎生或死，哲学高度的生或死的界限应该会比较模糊，在宇宙的尺度<br>上人类确实是过于渺小，海中浪花，【以至于人类文明是否灭绝与宇宙没有任何<br>关联】,但是描述程心这个人物时，展现在她内心的和她表现出的博爱，那种包容<br>一下子就从一个人很细微的角度提升到了一中宏观，甚至这是一种超越生死的东西，<br>一种以这种博爱为根源的文明也会是极具包容性的，如果宇宙会死去，那么爱的<br>维度一定超越宇宙。或许书中描写的黑暗森林很残忍，但是现实中太阳一定会暗去，<br>地球也一定会停止转动的，虽然会过很久很久。书中抛出了一些对于我们来说是很<br>终极性的哲学问题，也许未来的人类能找到答案。<br>当然生存是第一需求，直到解开宇宙真相的那天，唯有:<br>前进，前进，不择手段的前进!!</p>
+</li>
+</ul>
+</li>
+<li><p>最后总结一下</p>
+</li>
+</ul>
+<p>在这里重新把这段话打一遍时，我能明显感受到，我用词的匮乏，文采水平的贫瘠，<br>但这是我现在内心中真实的感触，如果终有那么一天，人类文明一定也会有人以最浪漫的<br>方式，在宇宙中留下属于我们的印记，不是为了给后来者知道这个文明，而是人类文明<br>自身的另一种生存。<br>在此写下我第一次读《三体》时的一段感悟:</p>
+<p>人性像下水道的虫子，肮脏，龌龊，令人厌恶，却又充满生命的挣扎和渴望，水道外的世界<br>充斥着更复杂深沉的黑暗，但偶尔也会有一丝微光照在某只虫子身上，更多虫子开始向往。</p>
+]]></content>
+      <categories>
+        <category>三体</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mermaid Syntax Error in graph</title>
     <url>/posts/7bae738f.html</url>
     <content><![CDATA[<h1 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h1><div class="note info no-icon"><ul>
@@ -617,44 +655,6 @@ Bob--&gt;&gt;John: Jolly good!
       </categories>
       <tags>
         <tag>mermaid</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>三体</title>
-    <url>/posts/1a772824.html</url>
-    <content><![CDATA[<h2 id="三体小说–刘慈溪"><a href="#三体小说–刘慈溪" class="headerlink" title="三体小说–刘慈溪"></a>三体小说–刘慈溪</h2><blockquote>
-<p>第一部   《三体》<br>第二部 《黑暗森林》<br>第三部 《死神永生》</p>
-</blockquote>
-<p>  每一次阅读三部曲，都有一种奇妙的回味，或对于文中人物的个人观点的细微改变，或对于所处世界观点的颠覆，<br>小说每一段都值得细细品尝，读完三部曲居然会发现似乎站在宏观的角度来看我们很难去判断，到底文中所描述的人类文明的下场是谁的责任，<br>因为站在宇宙的角度，这一切似乎是理所当然，完全符合宇宙公理。<br>  这是我第三次读三体小说了，碰巧今天在bilibili上写了一个评论，所以打算记录下来。这是以我个人的观点阐述我目前对整部小说的理解。</p>
-<span id="more"></span>
-
-<ul>
-<li><p>评论是这样的:</p>
-<ul>
-<li><p>层主:<br>《三体》系列科幻小说究竟多牛？<br>《三体》导读一书中评价道:<br>文学家不可能有这么逼真的技术描写，<br>科学家不可能有这么极致的道德追问，<br>哲学家不可能有这么恣肆的天马行空，<br>《三体》却同时具备了这些特色。</p>
-</li>
-<li><p>其下一位朋友的品论:<br>换个角度:<br>文笔不行，硬伤不少，深度不够[doge]</p>
-</li>
-<li><p>我的回复并没有针对任何人任何观点，只是因为看到这位朋友的回复有感而发.</p>
-<blockquote>
-<p>【】中是我现在想到，加进去的<br>相反我看到了大刘这三种的终极，这是我站在人和我自己的角度考虑的回答:<br>这些人物体现了人类文明的内在，不仅仅是大刘自己的精神追求，文中多次<br>表现了整个人类世界的傲慢，很大的具象化了当今的舆论社会三观；【还描<br>述了几段情节跌宕的爱情故事】还有不失浪漫硬核的星星和小宇宙做礼物，<br>曲折的爱情故事，谁能想到云天明最后居然和AA跑了!!!，很多人说程心是<br>圣母x，如果不是她人类就不会如此下场，但恰恰相反程心给人类带来的是心<br>灵上的救赎，母性在生命的意义是具有很高的抽象意义，一种不太聪明的大爱，<br>在第三部最后留下金鱼生态球的描写中，虽然我们也可能猜到一种可能的结局，<br>但是这又何尝不是这冰冷宇宙中的一丝暖意，做人又何尝不是追求一种无愧于心<br>的态度，把对错交给时间去评判。这不是为了体现人类的本质而是生命的意义，<br>规律是无情的，生命对于生存也是在DNA中映刻的本能，但在这一切之上还有更<br>高级的东西吗?</p>
-</blockquote>
-<p>在科学上不用说，这已经是终极浪漫了！探究世界真理，宇宙尽头，生命的本质。<br>贯穿三部曲中，从来不缺少人类对宇宙中位置规律的探寻，科技是生存的第一<br>原力，生存离不开科学技术的发展，因为现实中宇宙大自然比书中可能要更加<br>残酷。人类文明面临重大危机表现的那种对知识的渴求是映刻在DNA中的，技术<br>爆炸是存在我们生活中息息相关的，百年以前和百年以后，这是独属文明生存的<br>浪漫。也许我们的子孙后代也会在647号小宇宙来一场极致的浪漫邂逅，又或者和<br>某个未知文明来一次宇宙的世纪旅行。人类的最终旅途是星辰大海！</p>
-<p>哲学太过隐晦深刻，我难以用我所知来描述我的感受，可能会很苍白。深究一切<br>根源本质救赎生或死，哲学高度的生或死的界限应该会比较模糊，在宇宙的尺度<br>上人类确实是过于渺小，海中浪花，【以至于人类文明是否灭绝与宇宙没有任何<br>关联】,但是描述程心这个人物时，展现在她内心的和她表现出的博爱，那种包容<br>一下子就从一个人很细微的角度提升到了一中宏观，甚至这是一种超越生死的东西，<br>一种以这种博爱为根源的文明也会是极具包容性的，如果宇宙会死去，那么爱的<br>维度一定超越宇宙。或许书中描写的黑暗森林很残忍，但是现实中太阳一定会暗去，<br>地球也一定会停止转动的，虽然会过很久很久。书中抛出了一些对于我们来说是很<br>终极性的哲学问题，也许未来的人类能找到答案。<br>当然生存是第一需求，直到解开宇宙真相的那天，唯有:<br>前进，前进，不择手段的前进!!</p>
-</li>
-</ul>
-</li>
-<li><p>最后总结一下</p>
-</li>
-</ul>
-<p>在这里重新把这段话打一遍时，我能明显感受到，我用词的匮乏，文采水平的贫瘠，<br>但这是我现在内心中真实的感触，如果终有那么一天，人类文明一定也会有人以最浪漫的<br>方式，在宇宙中留下属于我们的印记，不是为了给后来者知道这个文明，而是人类文明<br>自身的另一种生存。<br>在此写下我第一次读《三体》时的一段感悟:</p>
-<p>人性像下水道的虫子，肮脏，龌龊，令人厌恶，却又充满生命的挣扎和渴望，水道外的世界<br>充斥着更复杂深沉的黑暗，但偶尔也会有一丝微光照在某只虫子身上，更多虫子开始向往。</p>
-]]></content>
-      <categories>
-        <category>三体</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -782,29 +782,6 @@ Bob--&gt;&gt;John: Jolly good!
       </tags>
   </entry>
   <entry>
-    <title>搭建前端环境</title>
-    <url>/posts/8ab99526.html</url>
-    <content><![CDATA[<h1 id="前端环境搭建"><a href="#前端环境搭建" class="headerlink" title="前端环境搭建"></a>前端环境搭建</h1><div class="note default"><p>os: Arch<br>edit: Nvim  SpaceVim</p>
-</div>
-
-<h2 id="1-启用jacascript语言插件"><a href="#1-启用jacascript语言插件" class="headerlink" title="1. 启用jacascript语言插件"></a>1. 启用jacascript语言插件</h2><figure class="highlight plain"><figcaption><span>init.toml</span></figcaption><table><tr><td class="code"><pre><span class="line">[[layers]]</span><br><span class="line">  name &#x3D; &quot;lang#javascript&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-代码补全"><a href="#2-代码补全" class="headerlink" title="2. 代码补全"></a>2. 代码补全</h2><p>自动补全可以使用自带的 <code>autocomplete</code> </p>
-<h2 id="3-语法检查"><a href="#3-语法检查" class="headerlink" title="3. 语法检查"></a>3. 语法检查</h2><p>默认使用 <code>checkers</code>, 通过 <code>neomake</code> 异步调用 <code>eslint</code>完成</p>
-<figure class="highlight plain"><figcaption><span>install</span></figcaption><table><tr><td class="code"><pre><span class="line">npm install -g eslint-cli</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-相关快捷键"><a href="#4-相关快捷键" class="headerlink" title="4. 相关快捷键"></a>4. 相关快捷键</h2><ol>
-<li><p>快速运行<br><code>SPC l r</code></p>
-</li>
-<li><p>交互式编程<br><code>SPC l s i</code><br>使用快捷键发送代码至解释器</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>环境搭建</category>
-      </categories>
-  </entry>
-  <entry>
     <title>百度和谷歌中的高级搜索语法</title>
     <url>/posts/f00c1d87.html</url>
     <content><![CDATA[<h2 id="使用搜索引擎"><a href="#使用搜索引擎" class="headerlink" title="使用搜索引擎"></a>使用搜索引擎</h2><p>在日常的生活中，所有人都生活在大量的数据中，而搜索引擎可以帮我们从一堆杂乱的信息汤中筛选出符合要求的信息资源</p>
@@ -850,6 +827,29 @@ Bob--&gt;&gt;John: Jolly good!
       <tags>
         <tag>高级搜索语法</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>搭建前端环境</title>
+    <url>/posts/8ab99526.html</url>
+    <content><![CDATA[<h1 id="前端环境搭建"><a href="#前端环境搭建" class="headerlink" title="前端环境搭建"></a>前端环境搭建</h1><div class="note default"><p>os: Arch<br>edit: Nvim  SpaceVim</p>
+</div>
+
+<h2 id="1-启用jacascript语言插件"><a href="#1-启用jacascript语言插件" class="headerlink" title="1. 启用jacascript语言插件"></a>1. 启用jacascript语言插件</h2><figure class="highlight plain"><figcaption><span>init.toml</span></figcaption><table><tr><td class="code"><pre><span class="line">[[layers]]</span><br><span class="line">  name &#x3D; &quot;lang#javascript&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-代码补全"><a href="#2-代码补全" class="headerlink" title="2. 代码补全"></a>2. 代码补全</h2><p>自动补全可以使用自带的 <code>autocomplete</code> </p>
+<h2 id="3-语法检查"><a href="#3-语法检查" class="headerlink" title="3. 语法检查"></a>3. 语法检查</h2><p>默认使用 <code>checkers</code>, 通过 <code>neomake</code> 异步调用 <code>eslint</code>完成</p>
+<figure class="highlight plain"><figcaption><span>install</span></figcaption><table><tr><td class="code"><pre><span class="line">npm install -g eslint-cli</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-相关快捷键"><a href="#4-相关快捷键" class="headerlink" title="4. 相关快捷键"></a>4. 相关快捷键</h2><ol>
+<li><p>快速运行<br><code>SPC l r</code></p>
+</li>
+<li><p>交互式编程<br><code>SPC l s i</code><br>使用快捷键发送代码至解释器</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>环境搭建</category>
+      </categories>
   </entry>
   <entry>
     <title>计算机网络原理基础教程</title>
