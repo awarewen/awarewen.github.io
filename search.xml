@@ -39,6 +39,33 @@
       </tags>
   </entry>
   <entry>
+    <title>Arch 挂起后黑屏</title>
+    <url>/posts/6c736e1c.html</url>
+    <content><![CDATA[<div class="note "><p>一个困扰许久的问题:<br>系统在锁屏后挂起，但是用鼠标和键盘经常无法唤起桌面</p>
+</div>
+
+<div class="note default"><p>OS: Arch linux 5.12.12-arch1 64位<br>DW: kde<br>核显: UHD Graphics 630<br>驱动: xf86-video-intel<br>独显: GeForce GTX 1650 mobile<br>驱动: nvidia</p>
+</div>
+
+<p>暂时没有什么头绪，看了网上的一些情况，也有一部分笔记本用户和我一样遇到这个问题<br>目前是知道大概是驱动或者是电源管理的问题</p>
+]]></content>
+      <categories>
+        <category>arch</category>
+        <category>xorg</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Arch硬盘挂载</title>
+    <url>/posts/992ab8cc.html</url>
+    <content><![CDATA[<div class="note "><h1 id="分区挂载"><a href="#分区挂载" class="headerlink" title="分区挂载"></a>分区挂载</h1></div>
+<p>将需要挂载的硬盘写入 <code>/etc/fstab</code></p>
+]]></content>
+      <categories>
+        <category>arch</category>
+        <category>disk</category>
+      </categories>
+  </entry>
+  <entry>
     <title>C语言基础知识</title>
     <url>/posts/7f2a165f.html</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><div class="note success"><p>本文内容基于 C-primer-plus (第六版), 所有代码基于<code>C 99</code>协议由<code>GCC v10.2.0</code>编译在<code>Arch Linux 64</code>位系统可以运行 </p>
@@ -394,25 +421,6 @@
       </tags>
   </entry>
   <entry>
-    <title>arch linux 更新</title>
-    <url>/posts/4cce837f.html</url>
-    <content><![CDATA[<p>linux 更新及一些已装的软件插件更新，本文只做备忘</p>
-<span id="more"></span>
-<h2 id="Arch-Linux-pacman更新"><a href="#Arch-Linux-pacman更新" class="headerlink" title="Arch Linux pacman更新"></a><code>Arch Linux pacman</code>更新</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo pacman -Syu</span><br></pre></td></tr></table></figure>
-
-<h2 id="bloghexo-amp-amp-插件"><a href="#bloghexo-amp-amp-插件" class="headerlink" title="bloghexo &amp;&amp; 插件"></a><code>blog</code>hexo &amp;&amp; 插件</h2><h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a><code>hexo</code></h3><figure class="highlight plain"><figcaption><span>没有插件，安装插件，cd 进blog目录</span></figcaption><table><tr><td class="code"><pre><span class="line">$ npm-check</span><br><span class="line">$ npm-upgrade</span><br></pre></td></tr></table></figure>
-
-<h3 id="npm"><a href="#npm" class="headerlink" title="npm"></a><code>npm</code></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo npm install -g npm</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>arch</category>
-      </categories>
-      <tags>
-        <tag>arch</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git add -A出现嵌入式仓库错误</title>
     <url>/posts/b1520caa.html</url>
     <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>github 仓库已经清空，现在重新将本地文件上传备份，但是在add -A 操作时提示正在加入嵌入式仓库<br>git 给我推荐的两个操作分别是:</p>
@@ -546,6 +554,15 @@
       </categories>
   </entry>
   <entry>
+    <title>install v2ray</title>
+    <url>/posts/760f3183.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>arch</category>
+        <category>v2ray</category>
+      </categories>
+  </entry>
+  <entry>
     <title>mermaid Syntax Error in graph</title>
     <url>/posts/7bae738f.html</url>
     <content><![CDATA[<h1 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h1><div class="note info no-icon"><ul>
@@ -610,6 +627,7 @@ Bob--&gt;&gt;John: Jolly good!
 
 <h1 id="聊聊想法"><a href="#聊聊想法" class="headerlink" title="聊聊想法"></a>聊聊想法</h1><div class="note "><p>计算机网络是一门重要的基础课程，基本上是一门必修课，基础功扎实将减少后期的学习投入<br>想了半天也没啥好写的废话，就这样吧，最近一段时间将主要更新这篇文章<br>‘^w^’ Happy Reading!</p>
 </div>
+
 ]]></content>
       <categories>
         <category>读书</category>
@@ -689,45 +707,6 @@ Bob--&gt;&gt;John: Jolly good!
       </tags>
   </entry>
   <entry>
-    <title>关于C语言main函数</title>
-    <url>/posts/2edb8018.html</url>
-    <content><![CDATA[<h1 id="什么是main"><a href="#什么是main" class="headerlink" title="什么是main"></a>什么是main</h1><p>在C语言中 main函数又叫主函数，是程序启动后第一个执行的函数<br>在C程序中不可缺少</p>
-<span id="more"></span>
-
-<h2 id="main函数的几种形式"><a href="#main函数的几种形式" class="headerlink" title="main函数的几种形式"></a>main函数的几种形式</h2><ol>
-<li><p>没有返回值，也没有参数 (c89)</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">main ()&#123; &#125;</span><br></pre></td></tr></table></figure>
-<p>通常这种写法只有旧的标准支持,使用现在的编译器则会默其返回值为int</p>
-</li>
-<li><p>这种声明方式不推荐，因为返回值是给系统的，返回空则系统就无法获取程序退出状态</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span> <span class="params">()</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>虽然形参列表没有参数，但是没有声明为void，则main函数依旧可以获取参数<br>程序中其他自定义函数也一样<br>入参没有类型限制，也可以不传参数</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>无参，程序就无法获取命令行参数, 如果入参则会报错</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p> 两个入参，第一个参数为命令行参数个数，第二个入参为命令行参数数组<br>入参的参数名可以自定义,不一定要下面示例中的名称</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">int</span> argv, <span class="keyword">char</span> *argc[])</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>三个入参</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">int</span> argv, <span class="keyword">char</span> *argc[], <span class="keyword">char</span> *envp[])</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-<p>前两种参数和第五种一样，但是第三个参数通常为编译器扩展的一个参数<br>但是全局变量environ可以代替参数envp的作用，获取或设置环境变量可以使用getenv或putenv，所以使用这个扩展参数其实没有必要</p>
-</li>
-</ol>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>可以看到C语言中main函数的写法有很多种，但是现在的C标准中只支持两种</p>
-<figure class="highlight c"><figcaption><span>正确的两种形式</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span> </span>&#123; &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">int</span> argv, <span class="keyword">char</span> *argc[])</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-<p>至于其他的写法要么是编译器扩展写法，要么就是历史遗留问题</p>
-]]></content>
-      <categories>
-        <category>C 语言</category>
-      </categories>
-      <tags>
-        <tag>C 语言main函数</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于mermaid syntax error in graph问题的解决方案</title>
     <url>/posts/4d5f9c23.html</url>
     <content><![CDATA[<div class="note danger"><h1 id="这个错误在最新版本已经修复！！"><a href="#这个错误在最新版本已经修复！！" class="headerlink" title="这个错误在最新版本已经修复！！"></a>这个错误在最新版本已经修复！！</h1></div>
@@ -767,17 +746,66 @@ Bob--&gt;&gt;John: Jolly good!
       </tags>
   </entry>
   <entry>
-    <title>在Arch linxu中运行eudic.AppImage</title>
-    <url>/posts/18563abb.html</url>
-    <content><![CDATA[<p>在eudic官网下载欧路词典后发现Appimage文件不能直接执行<br>下载了 AppImagelauncher 后仍然无法运行</p>
-<p>去arch的群询问后发现可能是程序包的问题已经反馈官网了</p>
+    <title>关于C语言main函数</title>
+    <url>/posts/2edb8018.html</url>
+    <content><![CDATA[<h1 id="什么是main"><a href="#什么是main" class="headerlink" title="什么是main"></a>什么是main</h1><p>在C语言中 main函数又叫主函数，是程序启动后第一个执行的函数<br>在C程序中不可缺少</p>
+<span id="more"></span>
+
+<h2 id="main函数的几种形式"><a href="#main函数的几种形式" class="headerlink" title="main函数的几种形式"></a>main函数的几种形式</h2><ol>
+<li><p>没有返回值，也没有参数 (c89)</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">main ()&#123; &#125;</span><br></pre></td></tr></table></figure>
+<p>通常这种写法只有旧的标准支持,使用现在的编译器则会默其返回值为int</p>
+</li>
+<li><p>这种声明方式不推荐，因为返回值是给系统的，返回空则系统就无法获取程序退出状态</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span> <span class="params">()</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>虽然形参列表没有参数，但是没有声明为void，则main函数依旧可以获取参数<br>程序中其他自定义函数也一样<br>入参没有类型限制，也可以不传参数</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>无参，程序就无法获取命令行参数, 如果入参则会报错</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p> 两个入参，第一个参数为命令行参数个数，第二个入参为命令行参数数组<br>入参的参数名可以自定义,不一定要下面示例中的名称</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">int</span> argv, <span class="keyword">char</span> *argc[])</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>三个入参</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">int</span> argv, <span class="keyword">char</span> *argc[], <span class="keyword">char</span> *envp[])</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
+<p>前两种参数和第五种一样，但是第三个参数通常为编译器扩展的一个参数<br>但是全局变量environ可以代替参数envp的作用，获取或设置环境变量可以使用getenv或putenv，所以使用这个扩展参数其实没有必要</p>
+</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>可以看到C语言中main函数的写法有很多种，但是现在的C标准中只支持两种</p>
+<figure class="highlight c"><figcaption><span>正确的两种形式</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span> </span>&#123; &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">int</span> argv, <span class="keyword">char</span> *argc[])</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
+<p>至于其他的写法要么是编译器扩展写法，要么就是历史遗留问题</p>
 ]]></content>
       <categories>
-        <category>arch error</category>
+        <category>C 语言</category>
       </categories>
       <tags>
-        <tag>arch error</tag>
+        <tag>C 语言main函数</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>搭建前端环境</title>
+    <url>/posts/8ab99526.html</url>
+    <content><![CDATA[<h1 id="前端环境搭建"><a href="#前端环境搭建" class="headerlink" title="前端环境搭建"></a>前端环境搭建</h1><div class="note default"><p>os: Arch<br>edit: Nvim  SpaceVim</p>
+</div>
+
+<h2 id="1-启用jacascript语言插件"><a href="#1-启用jacascript语言插件" class="headerlink" title="1. 启用jacascript语言插件"></a>1. 启用jacascript语言插件</h2><figure class="highlight plain"><figcaption><span>init.toml</span></figcaption><table><tr><td class="code"><pre><span class="line">[[layers]]</span><br><span class="line">  name &#x3D; &quot;lang#javascript&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-代码补全"><a href="#2-代码补全" class="headerlink" title="2. 代码补全"></a>2. 代码补全</h2><p>自动补全可以使用自带的 <code>autocomplete</code> </p>
+<h2 id="3-语法检查"><a href="#3-语法检查" class="headerlink" title="3. 语法检查"></a>3. 语法检查</h2><p>默认使用 <code>checkers</code>, 通过 <code>neomake</code> 异步调用 <code>eslint</code>完成</p>
+<figure class="highlight plain"><figcaption><span>install</span></figcaption><table><tr><td class="code"><pre><span class="line">npm install -g eslint-cli</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-相关快捷键"><a href="#4-相关快捷键" class="headerlink" title="4. 相关快捷键"></a>4. 相关快捷键</h2><ol>
+<li><p>快速运行<br><code>SPC l r</code></p>
+</li>
+<li><p>交互式编程<br><code>SPC l s i</code><br>使用快捷键发送代码至解释器</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>环境搭建</category>
+      </categories>
   </entry>
   <entry>
     <title>百度和谷歌中的高级搜索语法</title>
@@ -825,29 +853,6 @@ Bob--&gt;&gt;John: Jolly good!
       <tags>
         <tag>高级搜索语法</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>搭建前端环境</title>
-    <url>/posts/8ab99526.html</url>
-    <content><![CDATA[<h1 id="前端环境搭建"><a href="#前端环境搭建" class="headerlink" title="前端环境搭建"></a>前端环境搭建</h1><div class="note default"><p>os: Arch<br>edit: Nvim  SpaceVim</p>
-</div>
-
-<h2 id="1-启用jacascript语言插件"><a href="#1-启用jacascript语言插件" class="headerlink" title="1. 启用jacascript语言插件"></a>1. 启用jacascript语言插件</h2><figure class="highlight plain"><figcaption><span>init.toml</span></figcaption><table><tr><td class="code"><pre><span class="line">[[layers]]</span><br><span class="line">  name &#x3D; &quot;lang#javascript&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-代码补全"><a href="#2-代码补全" class="headerlink" title="2. 代码补全"></a>2. 代码补全</h2><p>自动补全可以使用自带的 <code>autocomplete</code> </p>
-<h2 id="3-语法检查"><a href="#3-语法检查" class="headerlink" title="3. 语法检查"></a>3. 语法检查</h2><p>默认使用 <code>checkers</code>, 通过 <code>neomake</code> 异步调用 <code>eslint</code>完成</p>
-<figure class="highlight plain"><figcaption><span>install</span></figcaption><table><tr><td class="code"><pre><span class="line">npm install -g eslint-cli</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-相关快捷键"><a href="#4-相关快捷键" class="headerlink" title="4. 相关快捷键"></a>4. 相关快捷键</h2><ol>
-<li><p>快速运行<br><code>SPC l r</code></p>
-</li>
-<li><p>交互式编程<br><code>SPC l s i</code><br>使用快捷键发送代码至解释器</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>环境搭建</category>
-      </categories>
   </entry>
   <entry>
     <title>计算机网络原理基础教程</title>
