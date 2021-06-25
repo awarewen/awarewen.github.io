@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2021 Happy New Year</title>
+    <url>/posts/292f001b.html</url>
+    <content><![CDATA[<h2 id="2021-新年快乐！"><a href="#2021-新年快乐！" class="headerlink" title="2021 新年快乐！"></a>2021 新年快乐！</h2><p>2020 已经过去，今天既是过去的终点也是新的起点</p>
+<p>2020 许多目标已经达成<br>2021 希望能做好自己的知识管理，从学习向学如何学习过度</p>
+<p>新年快乐！</p>
+]]></content>
+      <tags>
+        <tag>新年祈愿</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Arch 挂起后黑屏</title>
     <url>/posts/6c736e1c.html</url>
     <content><![CDATA[<div class="note "><p>一个困扰许久的问题:<br>系统在锁屏后挂起，但是用鼠标和键盘经常无法唤起桌面</p>
@@ -15,17 +26,6 @@
         <category>arch</category>
         <category>xorg</category>
       </categories>
-  </entry>
-  <entry>
-    <title>2021 Happy New Year</title>
-    <url>/posts/292f001b.html</url>
-    <content><![CDATA[<h2 id="2021-新年快乐！"><a href="#2021-新年快乐！" class="headerlink" title="2021 新年快乐！"></a>2021 新年快乐！</h2><p>2020 已经过去，今天既是过去的终点也是新的起点</p>
-<p>2020 许多目标已经达成<br>2021 希望能做好自己的知识管理，从学习向学如何学习过度</p>
-<p>新年快乐！</p>
-]]></content>
-      <tags>
-        <tag>新年祈愿</tag>
-      </tags>
   </entry>
   <entry>
     <title>C语言基础知识</title>
@@ -228,26 +228,6 @@
       </tags>
   </entry>
   <entry>
-    <title>git add -A出现嵌入式仓库错误</title>
-    <url>/posts/b1520caa.html</url>
-    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>github 仓库已经清空，现在重新将本地文件上传备份，但是在add -A 操作时提示正在加入嵌入式仓库<br>git 给我推荐的两个操作分别是:</p>
-<ol>
-<li>子模块添加<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git submodule add &lt;url&gt; <span class="string">&quot;name&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li>在暂存去将这个嵌入的仓库删除<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rm --cached <span class="string">&quot;name&quot;</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="目前已经解决"><a href="#目前已经解决" class="headerlink" title="目前已经解决"></a>目前已经解决</h2><p>原因是在提示的文件夹下面有旧仓库的.git文件夹，删除后即可重新添加到新仓库了</p>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git error</tag>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git&amp;&amp;GitHub</title>
     <url>/posts/6a622e08.html</url>
     <content><![CDATA[<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p>简单记录一下使用的git命令，方便记忆</p>
@@ -320,40 +300,24 @@
       </tags>
   </entry>
   <entry>
-    <title>三体</title>
-    <url>/posts/1a772824.html</url>
-    <content><![CDATA[<h2 id="三体小说–刘慈溪"><a href="#三体小说–刘慈溪" class="headerlink" title="三体小说–刘慈溪"></a>三体小说–刘慈溪</h2><blockquote>
-<p>第一部   《三体》<br>第二部 《黑暗森林》<br>第三部 《死神永生》</p>
-</blockquote>
-<p>  每一次阅读三部曲，都有一种奇妙的回味，或对于文中人物的个人观点的细微改变，或对于所处世界观点的颠覆，<br>小说每一段都值得细细品尝，读完三部曲居然会发现似乎站在宏观的角度来看我们很难去判断，到底文中所描述的人类文明的下场是谁的责任，<br>因为站在宇宙的角度，这一切似乎是理所当然，完全符合宇宙公理。<br>  这是我第三次读三体小说了，碰巧今天在bilibili上写了一个评论，所以打算记录下来。这是以我个人的观点阐述我目前对整部小说的理解。</p>
-<span id="more"></span>
+    <title>git add -A出现嵌入式仓库错误</title>
+    <url>/posts/b1520caa.html</url>
+    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>github 仓库已经清空，现在重新将本地文件上传备份，但是在add -A 操作时提示正在加入嵌入式仓库<br>git 给我推荐的两个操作分别是:</p>
+<ol>
+<li>子模块添加<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git submodule add &lt;url&gt; <span class="string">&quot;name&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>在暂存去将这个嵌入的仓库删除<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rm --cached <span class="string">&quot;name&quot;</span></span><br></pre></td></tr></table></figure>
 
-<ul>
-<li><p>评论是这样的:</p>
-<ul>
-<li><p>层主:<br>《三体》系列科幻小说究竟多牛？<br>《三体》导读一书中评价道:<br>文学家不可能有这么逼真的技术描写，<br>科学家不可能有这么极致的道德追问，<br>哲学家不可能有这么恣肆的天马行空，<br>《三体》却同时具备了这些特色。</p>
 </li>
-<li><p>其下一位朋友的品论:<br>换个角度:<br>文笔不行，硬伤不少，深度不够[doge]</p>
-</li>
-<li><p>我的回复并没有针对任何人任何观点，只是因为看到这位朋友的回复有感而发.</p>
-<blockquote>
-<p>【】中是我现在想到，加进去的<br>相反我看到了大刘这三种的终极，这是我站在人和我自己的角度考虑的回答:<br>这些人物体现了人类文明的内在，不仅仅是大刘自己的精神追求，文中多次<br>表现了整个人类世界的傲慢，很大的具象化了当今的舆论社会三观；【还描<br>述了几段情节跌宕的爱情故事】还有不失浪漫硬核的星星和小宇宙做礼物，<br>曲折的爱情故事，谁能想到云天明最后居然和AA跑了!!!，很多人说程心是<br>圣母x，如果不是她人类就不会如此下场，但恰恰相反程心给人类带来的是心<br>灵上的救赎，母性在生命的意义是具有很高的抽象意义，一种不太聪明的大爱，<br>在第三部最后留下金鱼生态球的描写中，虽然我们也可能猜到一种可能的结局，<br>但是这又何尝不是这冰冷宇宙中的一丝暖意，做人又何尝不是追求一种无愧于心<br>的态度，把对错交给时间去评判。这不是为了体现人类的本质而是生命的意义，<br>规律是无情的，生命对于生存也是在DNA中映刻的本能，但在这一切之上还有更<br>高级的东西吗?</p>
-</blockquote>
-<p>在科学上不用说，这已经是终极浪漫了！探究世界真理，宇宙尽头，生命的本质。<br>贯穿三部曲中，从来不缺少人类对宇宙中位置规律的探寻，科技是生存的第一<br>原力，生存离不开科学技术的发展，因为现实中宇宙大自然比书中可能要更加<br>残酷。人类文明面临重大危机表现的那种对知识的渴求是映刻在DNA中的，技术<br>爆炸是存在我们生活中息息相关的，百年以前和百年以后，这是独属文明生存的<br>浪漫。也许我们的子孙后代也会在647号小宇宙来一场极致的浪漫邂逅，又或者和<br>某个未知文明来一次宇宙的世纪旅行。人类的最终旅途是星辰大海！</p>
-<p>哲学太过隐晦深刻，我难以用我所知来描述我的感受，可能会很苍白。深究一切<br>根源本质救赎生或死，哲学高度的生或死的界限应该会比较模糊，在宇宙的尺度<br>上人类确实是过于渺小，海中浪花，【以至于人类文明是否灭绝与宇宙没有任何<br>关联】,但是描述程心这个人物时，展现在她内心的和她表现出的博爱，那种包容<br>一下子就从一个人很细微的角度提升到了一中宏观，甚至这是一种超越生死的东西，<br>一种以这种博爱为根源的文明也会是极具包容性的，如果宇宙会死去，那么爱的<br>维度一定超越宇宙。或许书中描写的黑暗森林很残忍，但是现实中太阳一定会暗去，<br>地球也一定会停止转动的，虽然会过很久很久。书中抛出了一些对于我们来说是很<br>终极性的哲学问题，也许未来的人类能找到答案。<br>当然生存是第一需求，直到解开宇宙真相的那天，唯有:<br>前进，前进，不择手段的前进!!</p>
-</li>
-</ul>
-</li>
-<li><p>最后总结一下</p>
-</li>
-</ul>
-<p>在这里重新把这段话打一遍时，我能明显感受到，我用词的匮乏，文采水平的贫瘠，<br>但这是我现在内心中真实的感触，如果终有那么一天，人类文明一定也会有人以最浪漫的<br>方式，在宇宙中留下属于我们的印记，不是为了给后来者知道这个文明，而是人类文明<br>自身的另一种生存。<br>在此写下我第一次读《三体》时的一段感悟:</p>
-<p>人性像下水道的虫子，肮脏，龌龊，令人厌恶，却又充满生命的挣扎和渴望，水道外的世界<br>充斥着更复杂深沉的黑暗，但偶尔也会有一丝微光照在某只虫子身上，更多虫子开始向往。</p>
+</ol>
+<h2 id="目前已经解决"><a href="#目前已经解决" class="headerlink" title="目前已经解决"></a>目前已经解决</h2><p>原因是在提示的文件夹下面有旧仓库的.git文件夹，删除后即可重新添加到新仓库了</p>
 ]]></content>
       <categories>
-        <category>读书</category>
-        <category>三体</category>
+        <category>git</category>
       </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>git error</tag>
+      </tags>
   </entry>
   <entry>
     <title>mermaid Syntax Error in graph</title>
@@ -372,10 +336,10 @@
 <li><p>我将theme-next文档中<a href="https://theme-next.js.org/docs/tag-plugins/mermaid#Examples">mermaid#Examples</a>板块中的示例代码复制到我的文章中</p>
 </li>
 <li><p>这是我在示例复制的语法样式</p>
-<img data-src="/posts/7bae738f/inMyPost.png" class="">
 </li>
-<li><p>这是我的博客中显示的样式</p>
-<div class="note danger"><h2 id="以下是示例代码运行的效果"><a href="#以下是示例代码运行的效果" class="headerlink" title="以下是示例代码运行的效果"></a>以下是示例代码运行的效果</h2><pre class="mermaid">
+</ol>
+<ol start="3">
+<li>这是我的博客中显示的样式<div class="note danger"><h2 id="以下是示例代码运行的效果"><a href="#以下是示例代码运行的效果" class="headerlink" title="以下是示例代码运行的效果"></a>以下是示例代码运行的效果</h2><pre class="mermaid">
 graph TD
 A[Hard] --&gt;|Text| B(Round)
 B --&gt; C{Decision}
@@ -386,7 +350,7 @@ C --&gt;|Two| E[Result 2]
 </li>
 </ol>
 <p>我的示例代码是从示例中复制过来的， 为什么官方文档中的示例图像正常显示，而我的却不行</p>
-<img data-src="/posts/7bae738f/inNextDoc.png" class="" title="这是官网的示例">
+
 </div>
 
 <h1 id="第二个样例"><a href="#第二个样例" class="headerlink" title="第二个样例"></a>第二个样例</h1><figure class="highlight yaml"><figcaption><span>这是官网的示例代码</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">%</span> <span class="string">mermaid</span> <span class="string">sequenceDiagram</span> <span class="string">%</span>&#125;</span><br><span class="line"><span class="string">Alice-&gt;&gt;John:</span> <span class="string">Hello</span> <span class="string">John,</span> <span class="string">how</span> <span class="string">are</span> <span class="string">you?</span></span><br><span class="line"><span class="string">loop</span> <span class="string">Healthcheck</span></span><br><span class="line">    <span class="string">John-&gt;&gt;John:</span> <span class="string">Fight</span> <span class="string">against</span> <span class="string">hypochondria</span></span><br><span class="line"><span class="string">end</span></span><br><span class="line"><span class="attr">Note right of John:</span> <span class="string">Rational</span> <span class="string">thoughts!</span></span><br><span class="line"><span class="string">John--&gt;&gt;Alice:</span> <span class="string">Great!</span></span><br><span class="line"><span class="string">John-&gt;&gt;Bob:</span> <span class="string">How</span> <span class="string">about</span> <span class="string">you?</span></span><br><span class="line"><span class="string">Bob--&gt;&gt;John:</span> <span class="string">Jolly</span> <span class="string">good!</span></span><br><span class="line">&#123;<span class="string">%</span> <span class="string">endmermaid</span> <span class="string">%</span>&#125;</span><br></pre></td></tr></table></figure>
@@ -410,6 +374,23 @@ Bob--&gt;&gt;John: Jolly good!
       <tags>
         <tag>mermaid</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>一本书读懂TCP/IP</title>
+    <url>/posts/db895e09.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+<h1 id="阔别已久，失踪人口回归"><a href="#阔别已久，失踪人口回归" class="headerlink" title="阔别已久，失踪人口回归"></a>阔别已久，失踪人口回归</h1>
+</blockquote>
+
+<h1 id="聊聊想法"><a href="#聊聊想法" class="headerlink" title="聊聊想法"></a>聊聊想法</h1><div class="note "><p>计算机网络是一门重要的基础课程，基本上是一门必修课，基础功扎实将减少后期的学习投入<br>想了半天也没啥好写的废话，就这样吧，最近一段时间将主要更新这篇文章<br>‘^w^’ Happy Reading!</p>
+</div>
+
+]]></content>
+      <categories>
+        <category>读书</category>
+        <category>计算机网络</category>
+        <category>TCP/IP</category>
+      </categories>
   </entry>
   <entry>
     <title>为hexo添加view统计</title>
@@ -447,20 +428,39 @@ Bob--&gt;&gt;John: Jolly good!
       </tags>
   </entry>
   <entry>
-    <title>一本书读懂TCP/IP</title>
-    <url>/posts/db895e09.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-<h1 id="阔别已久，失踪人口回归"><a href="#阔别已久，失踪人口回归" class="headerlink" title="阔别已久，失踪人口回归"></a>阔别已久，失踪人口回归</h1>
+    <title>三体</title>
+    <url>/posts/1a772824.html</url>
+    <content><![CDATA[<h2 id="三体小说–刘慈溪"><a href="#三体小说–刘慈溪" class="headerlink" title="三体小说–刘慈溪"></a>三体小说–刘慈溪</h2><blockquote>
+<p>第一部   《三体》<br>第二部 《黑暗森林》<br>第三部 《死神永生》</p>
 </blockquote>
+<p>  每一次阅读三部曲，都有一种奇妙的回味，或对于文中人物的个人观点的细微改变，或对于所处世界观点的颠覆，<br>小说每一段都值得细细品尝，读完三部曲居然会发现似乎站在宏观的角度来看我们很难去判断，到底文中所描述的人类文明的下场是谁的责任，<br>因为站在宇宙的角度，这一切似乎是理所当然，完全符合宇宙公理。<br>  这是我第三次读三体小说了，碰巧今天在bilibili上写了一个评论，所以打算记录下来。这是以我个人的观点阐述我目前对整部小说的理解。</p>
+<span id="more"></span>
 
-<h1 id="聊聊想法"><a href="#聊聊想法" class="headerlink" title="聊聊想法"></a>聊聊想法</h1><div class="note "><p>计算机网络是一门重要的基础课程，基本上是一门必修课，基础功扎实将减少后期的学习投入<br>想了半天也没啥好写的废话，就这样吧，最近一段时间将主要更新这篇文章<br>‘^w^’ Happy Reading!</p>
-</div>
-
+<ul>
+<li><p>评论是这样的:</p>
+<ul>
+<li><p>层主:<br>《三体》系列科幻小说究竟多牛？<br>《三体》导读一书中评价道:<br>文学家不可能有这么逼真的技术描写，<br>科学家不可能有这么极致的道德追问，<br>哲学家不可能有这么恣肆的天马行空，<br>《三体》却同时具备了这些特色。</p>
+</li>
+<li><p>其下一位朋友的品论:<br>换个角度:<br>文笔不行，硬伤不少，深度不够[doge]</p>
+</li>
+<li><p>我的回复并没有针对任何人任何观点，只是因为看到这位朋友的回复有感而发.</p>
+<blockquote>
+<p>【】中是我现在想到，加进去的<br>相反我看到了大刘这三种的终极，这是我站在人和我自己的角度考虑的回答:<br>这些人物体现了人类文明的内在，不仅仅是大刘自己的精神追求，文中多次<br>表现了整个人类世界的傲慢，很大的具象化了当今的舆论社会三观；【还描<br>述了几段情节跌宕的爱情故事】还有不失浪漫硬核的星星和小宇宙做礼物，<br>曲折的爱情故事，谁能想到云天明最后居然和AA跑了!!!，很多人说程心是<br>圣母x，如果不是她人类就不会如此下场，但恰恰相反程心给人类带来的是心<br>灵上的救赎，母性在生命的意义是具有很高的抽象意义，一种不太聪明的大爱，<br>在第三部最后留下金鱼生态球的描写中，虽然我们也可能猜到一种可能的结局，<br>但是这又何尝不是这冰冷宇宙中的一丝暖意，做人又何尝不是追求一种无愧于心<br>的态度，把对错交给时间去评判。这不是为了体现人类的本质而是生命的意义，<br>规律是无情的，生命对于生存也是在DNA中映刻的本能，但在这一切之上还有更<br>高级的东西吗?</p>
+</blockquote>
+<p>在科学上不用说，这已经是终极浪漫了！探究世界真理，宇宙尽头，生命的本质。<br>贯穿三部曲中，从来不缺少人类对宇宙中位置规律的探寻，科技是生存的第一<br>原力，生存离不开科学技术的发展，因为现实中宇宙大自然比书中可能要更加<br>残酷。人类文明面临重大危机表现的那种对知识的渴求是映刻在DNA中的，技术<br>爆炸是存在我们生活中息息相关的，百年以前和百年以后，这是独属文明生存的<br>浪漫。也许我们的子孙后代也会在647号小宇宙来一场极致的浪漫邂逅，又或者和<br>某个未知文明来一次宇宙的世纪旅行。人类的最终旅途是星辰大海！</p>
+<p>哲学太过隐晦深刻，我难以用我所知来描述我的感受，可能会很苍白。深究一切<br>根源本质救赎生或死，哲学高度的生或死的界限应该会比较模糊，在宇宙的尺度<br>上人类确实是过于渺小，海中浪花，【以至于人类文明是否灭绝与宇宙没有任何<br>关联】,但是描述程心这个人物时，展现在她内心的和她表现出的博爱，那种包容<br>一下子就从一个人很细微的角度提升到了一中宏观，甚至这是一种超越生死的东西，<br>一种以这种博爱为根源的文明也会是极具包容性的，如果宇宙会死去，那么爱的<br>维度一定超越宇宙。或许书中描写的黑暗森林很残忍，但是现实中太阳一定会暗去，<br>地球也一定会停止转动的，虽然会过很久很久。书中抛出了一些对于我们来说是很<br>终极性的哲学问题，也许未来的人类能找到答案。<br>当然生存是第一需求，直到解开宇宙真相的那天，唯有:<br>前进，前进，不择手段的前进!!</p>
+</li>
+</ul>
+</li>
+<li><p>最后总结一下</p>
+</li>
+</ul>
+<p>在这里重新把这段话打一遍时，我能明显感受到，我用词的匮乏，文采水平的贫瘠，<br>但这是我现在内心中真实的感触，如果终有那么一天，人类文明一定也会有人以最浪漫的<br>方式，在宇宙中留下属于我们的印记，不是为了给后来者知道这个文明，而是人类文明<br>自身的另一种生存。<br>在此写下我第一次读《三体》时的一段感悟:</p>
+<p>人性像下水道的虫子，肮脏，龌龊，令人厌恶，却又充满生命的挣扎和渴望，水道外的世界<br>充斥着更复杂深沉的黑暗，但偶尔也会有一丝微光照在某只虫子身上，更多虫子开始向往。</p>
 ]]></content>
       <categories>
         <category>读书</category>
-        <category>计算机网络</category>
-        <category>TCP/IP</category>
+        <category>三体</category>
       </categories>
   </entry>
   <entry>
@@ -503,6 +503,45 @@ Bob--&gt;&gt;John: Jolly good!
       </tags>
   </entry>
   <entry>
+    <title>关于mermaid syntax error in graph问题的解决方案</title>
+    <url>/posts/4d5f9c23.html</url>
+    <content><![CDATA[<div class="note danger"><h1 id="这个错误在最新版本已经修复！！"><a href="#这个错误在最新版本已经修复！！" class="headerlink" title="这个错误在最新版本已经修复！！"></a>这个错误在最新版本已经修复！！</h1></div>
+
+<h1 id="提出这个bug已经有一段时间了，在next-hexo-issues已经得到了解决方案"><a href="#提出这个bug已经有一段时间了，在next-hexo-issues已经得到了解决方案" class="headerlink" title="提出这个bug已经有一段时间了，在next-hexo issues已经得到了解决方案"></a>提出<mark class="label danger">mermaid syntax error in graph</mark>这个bug已经有一段时间了，在next-hexo issues已经得到了解决方案</h1><p>原文:</p>
+<blockquote class="blockquote-center">
+<p><a href="https://github.com/next-theme/hexo-theme-next/issues/211">#211 Mermaid source code edited by Hexo plugin causing syntax error</a></p>
+
+</blockquote>
+
+<p>引起问题的原因是我安装了<mark class="label ">hexo-neat</mark>, hexo-neat 在压缩post时会将文章中的换行符删除，而mermaid对空格和换行符敏感，所以导致了html语法解释器报错</p>
+<span id="more"></span>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>有两种方法避免<br>一种是禁用hexo-neat插件<br>另一种是用一种html的局部忽略语法将mermaid代码部分包裹在<code>&lt;!-- htmlmin:ignore --&gt;</code>中</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- htmlmin:ignore --&gt;</span><br><span class="line">&lt;pre class&#x3D;&quot;mermaid&quot;&gt;</span><br><span class="line">sequenceDiagram</span><br><span class="line">Alice-&gt;&gt;John: Hello John, how are you?</span><br><span class="line">loop Healthcheck</span><br><span class="line">    John-&gt;&gt;John: Fight against hypochondria</span><br><span class="line">end</span><br><span class="line">Note right of John: Rational thoughts!</span><br><span class="line">John--&gt;&gt;Alice: Great!</span><br><span class="line">John-&gt;&gt;Bob: How about you?</span><br><span class="line">Bob--&gt;&gt;John: Jolly good!</span><br><span class="line">&lt;&#x2F;pre&gt;</span><br><span class="line">&lt;!-- htmlmin:ignore --&gt;</span><br></pre></td></tr></table></figure>
+<p>实现:</p>
+<pre class="mermaid">
+sequenceDiagram
+Alice-&gt;&gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&gt;&gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&gt;&gt;Alice: Great!
+John-&gt;&gt;Bob: How about you?
+Bob--&gt;&gt;John: Jolly good!
+</pre>
+
+]]></content>
+      <categories>
+        <category>hexo</category>
+        <category>error</category>
+        <category>mermaid</category>
+        <category>fixed</category>
+      </categories>
+      <tags>
+        <tag>mermaid</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算机网络原理基础教程</title>
     <url>/posts/7a1dadd3.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -519,14 +558,14 @@ Bob--&gt;&gt;John: Jolly good!
 <li>主要是以中心主机面向大量分散的终端构成的远程联机系统，这一阶段网络刚刚开始发展，网络用户并不多，较为分散而且面向的用户也较为高层次。</li>
 <li>这一阶段的主要特征: 仅包含键盘和显示器的终端、中心主机</li>
 <li>缺点: 远程联机系统中除了中心处理机外的所有终端设备都没有独立处理信息的功能，网络中的各个中心主机并不能实现数据共享</li>
-<li>代表: 美航和IBM联合开发的飞机订票系统 <code>SABRE-I</code><img data-src="/posts/7a1dadd3/main.png" class=""></li>
+<li>代表: 美航和IBM联合开发的飞机订票系统 <code>SABRE-I</code></li>
 </ul>
 </div>
 <div class="note "><h2 id="第二阶段：主机互联"><a href="#第二阶段：主机互联" class="headerlink" title="第二阶段：主机互联"></a>第二阶段：主机互联</h2><ul>
 <li>主机之间不通过线路互联，而是通过<mark class="label default">接口报文处理机(Interface Message Processor, IMP)</mark>转接从而达到互联</li>
 <li>IMP 和通信线路组成了 <code>通信子网</code>， 由 <code>通信子网</code> 互联起来的主机负责运行程序，提供资源共享，组成 <code>资源子网</code></li>
 <li>缺点: 虽然初步达成通信和资源共享，但是位于信息链末端的终端依旧只能通过中心主机通信和获取资源</li>
-<li>代表: 由美国国防部高级研究计划署协助开发的 <code>ARPA net</code><img data-src="/posts/7a1dadd3/second.png" class=""></li>
+<li>代表: 由美国国防部高级研究计划署协助开发的 <code>ARPA net</code></li>
 </ul>
 </div>
 <div class="note "><h2 id="第三阶段：标准化"><a href="#第三阶段：标准化" class="headerlink" title="第三阶段：标准化"></a>第三阶段：标准化</h2><ul>
@@ -560,7 +599,7 @@ Bob--&gt;&gt;John: Jolly good!
 <li>常见的总线拓扑结构是以太网，以太网曾以同轴电缆作为传输介质，但是现在大多数都替换成了双绞线，双绞线以太网其实是星型的总线拓扑结构，总线本身被紧缩到了集线器中</li>
 <li>适合小型办公室布局</li>
 </ul>
-<img data-src="/posts/7a1dadd3/busTopology.png" class=""> 
+ 
 <div class="note primary no-icon"><h3 id="特点"><a href="#特点" class="headerlink" title="特点:"></a>特点:</h3><ul>
 <li>安装方便，配置简单</li>
 <li>易于扩展</li>
@@ -583,7 +622,7 @@ Bob--&gt;&gt;John: Jolly good!
 <li>具有代表性的是令牌环局域网，这种结构最早由 <code>IBM</code> 提出</li>
 <li>由于是单向传输适合采用光纤介质，提高传输速度和抗干扰</li>
 </ul>
-<img data-src="/posts/7a1dadd3/ringTopology.png" class="">
+
 <div class="note primary no-icon"><h3 id="特点"><a href="#特点" class="headerlink" title="特点:"></a>特点:</h3><ul>
 <li>信息传输实时性比总线型要好</li>
 <li>通信线路与总线型网络相当</li>
@@ -604,7 +643,7 @@ Bob--&gt;&gt;John: Jolly good!
 <li>由中央节点执行集中式通信控制策略，网络中的任何两个节点要进行通信必须经过中央节点的控制</li>
 <li>网络中除中央节点以外的节点发生故障不会影响到其他节点网络通信</li>
 </ul>
-<img data-src="/posts/7a1dadd3/starTopology.png" class="">
+
 <div class="note primary no-icon"><h3 id="特点"><a href="#特点" class="headerlink" title="特点:"></a>特点:</h3><ul>
 <li>方便网络监控和管理</li>
 <li>故障诊断和隔离容易</li>
@@ -621,7 +660,7 @@ Bob--&gt;&gt;John: Jolly good!
 <li>网状拓扑结构多数是由多个子网或多个网络构成，子网利用集线器、中继器将多个设备连接，再由桥接器、路由器、、网关将子网连接起来构成网络状结构</li>
 <li>这种结构一般用于internet骨干网上使用路由算法来计算发送数据的最佳路径</li>
 </ul>
-<img data-src="/posts/7a1dadd3/newworkTopology.png" class="">
+
 <div class="note primary no-icon"><h3 id="特点"><a href="#特点" class="headerlink" title="特点:"></a>特点:</h3><ul>
 <li>多条线路可靠性更高</li>
 <li>最好的拓扑结构</li>
@@ -642,7 +681,7 @@ Bob--&gt;&gt;John: Jolly good!
 <li>一般一个分支和节点发生故障不会影响其他分支</li>
 <li>传统的有线电视网采用的就是树型拓扑结构</li>
 </ul>
-<img data-src="/posts/7a1dadd3/treeTopology.png" class="">
+
 <div class="note primary no-icon"><h3 id="特点"><a href="#特点" class="headerlink" title="特点:"></a>特点:</h3><ul>
 <li>新增节点无需改动原网络易于扩充，灵活，成本低，易推广</li>
 <li>故障隔离较容易</li>
@@ -660,7 +699,7 @@ Bob--&gt;&gt;John: Jolly good!
 <li>在一定面积内用最少的节点，保证每个节点的最大覆盖面积且每个节点之间也可以进行通信</li>
 <li>相较于有线网络，无线网络更加灵活，维护成本较低</li>
 </ul>
-<img data-src="/posts/7a1dadd3/cellularStructure.png" class="">
+
 <div class="note primary no-icon"><h3 id="特点"><a href="#特点" class="headerlink" title="特点:"></a>特点:</h3><ul>
 <li>以无线介质为主</li>
 <li>支持点到点和多点传输</li>
@@ -674,7 +713,7 @@ Bob--&gt;&gt;John: Jolly good!
 
 <h3 id="7-混合型拓扑"><a href="#7-混合型拓扑" class="headerlink" title="7. 混合型拓扑"></a>7. 混合型拓扑</h3><p>  混合型网络拓扑结构的出现是为了解决其他单个网络结构的短板，通过组合的方式，将两个或两个以上的拓扑结构结合在一起，达到互补的效果</p>
 <!--==========================三、分类==================================-->
-<h1 id="三、计算机网络的分类"><a href="#三、计算机网络的分类" class="headerlink" title="三、计算机网络的分类"></a>三、计算机网络的分类</h1><img data-src="/posts/7a1dadd3/classify.png" class="">
+<h1 id="三、计算机网络的分类"><a href="#三、计算机网络的分类" class="headerlink" title="三、计算机网络的分类"></a>三、计算机网络的分类</h1>
 
 <!--覆盖范围分类-->
 <div class="note default no-icon"><h2 id="1-按网络覆盖范围"><a href="#1-按网络覆盖范围" class="headerlink" title="1. 按网络覆盖范围"></a>1. 按网络覆盖范围</h2></div>
@@ -715,45 +754,6 @@ Bob--&gt;&gt;John: Jolly good!
       </categories>
       <tags>
         <tag>books</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于mermaid syntax error in graph问题的解决方案</title>
-    <url>/posts/4d5f9c23.html</url>
-    <content><![CDATA[<div class="note danger"><h1 id="这个错误在最新版本已经修复！！"><a href="#这个错误在最新版本已经修复！！" class="headerlink" title="这个错误在最新版本已经修复！！"></a>这个错误在最新版本已经修复！！</h1></div>
-
-<h1 id="提出这个bug已经有一段时间了，在next-hexo-issues已经得到了解决方案"><a href="#提出这个bug已经有一段时间了，在next-hexo-issues已经得到了解决方案" class="headerlink" title="提出这个bug已经有一段时间了，在next-hexo issues已经得到了解决方案"></a>提出<mark class="label danger">mermaid syntax error in graph</mark>这个bug已经有一段时间了，在next-hexo issues已经得到了解决方案</h1><p>原文:</p>
-<blockquote class="blockquote-center">
-<p><a href="https://github.com/next-theme/hexo-theme-next/issues/211">#211 Mermaid source code edited by Hexo plugin causing syntax error</a></p>
-
-</blockquote>
-
-<p>引起问题的原因是我安装了<mark class="label ">hexo-neat</mark>, hexo-neat 在压缩post时会将文章中的换行符删除，而mermaid对空格和换行符敏感，所以导致了html语法解释器报错</p>
-<span id="more"></span>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>有两种方法避免<br>一种是禁用hexo-neat插件<br>另一种是用一种html的局部忽略语法将mermaid代码部分包裹在<code>&lt;!-- htmlmin:ignore --&gt;</code>中</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- htmlmin:ignore --&gt;</span><br><span class="line">&lt;pre class&#x3D;&quot;mermaid&quot;&gt;</span><br><span class="line">sequenceDiagram</span><br><span class="line">Alice-&gt;&gt;John: Hello John, how are you?</span><br><span class="line">loop Healthcheck</span><br><span class="line">    John-&gt;&gt;John: Fight against hypochondria</span><br><span class="line">end</span><br><span class="line">Note right of John: Rational thoughts!</span><br><span class="line">John--&gt;&gt;Alice: Great!</span><br><span class="line">John-&gt;&gt;Bob: How about you?</span><br><span class="line">Bob--&gt;&gt;John: Jolly good!</span><br><span class="line">&lt;&#x2F;pre&gt;</span><br><span class="line">&lt;!-- htmlmin:ignore --&gt;</span><br></pre></td></tr></table></figure>
-<p>实现:</p>
-<pre class="mermaid">
-sequenceDiagram
-Alice-&gt;&gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&gt;&gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&gt;&gt;Alice: Great!
-John-&gt;&gt;Bob: How about you?
-Bob--&gt;&gt;John: Jolly good!
-</pre>
-
-]]></content>
-      <categories>
-        <category>hexo</category>
-        <category>error</category>
-        <category>mermaid</category>
-        <category>fixed</category>
-      </categories>
-      <tags>
-        <tag>mermaid</tag>
       </tags>
   </entry>
 </search>
