@@ -38,12 +38,10 @@
 
 <ol>
 <li><p>安装必要的驱动</p>
-<figure class="highlight plain"><figcaption><span>intel</span></figcaption><table><tr><td class="code"><pre><span class="line">sudo pacman -S xf86-video-intel </span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>nvidia</span></figcaption><table><tr><td class="code"><pre><span class="line">sudo pacman -S nvidia nvidia-prime nvidia-settings nvidia-utils opencl-nvidia lib32-nvidia-utils lib32-opencl-nvidia </span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight plaintext"><figcaption><span>intel</span></figcaption><table><tr><td class="code"><pre><span class="line">sudo pacman -S xf86-video-intel </span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><figcaption><span>nvidia</span></figcaption><table><tr><td class="code"><pre><span class="line">sudo pacman -S nvidia nvidia-prime nvidia-settings nvidia-utils opencl-nvidia lib32-nvidia-utils lib32-opencl-nvidia </span><br></pre></td></tr></table></figure></li>
 <li><p>显卡切换管理</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pacman -S optimus-manager optimus-manager-qt bbswitch </span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo pacman -S optimus-manager optimus-manager-qt bbswitch </span><br></pre></td></tr></table></figure></li>
 <li><p>使用optimus-manager-qt更改一些配置</p>
 </li>
 <li><p>显卡切换</p>
@@ -54,9 +52,7 @@
 <li>或者在optimus-manager-qt中选择nvidia</li>
 </ul>
 <ol start="5">
-<li>重启实验<br>查看当前使用的显卡<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">glxinfo | grep &quot;OpenGL renderer&quot; </span><br></pre></td></tr></table></figure>
-
-</li>
+<li>重启实验<br>查看当前使用的显卡<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">glxinfo | grep &quot;OpenGL renderer&quot; </span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>显卡是切换成功，但是黑屏还是无法解决<br>根据我了解的一些情况，相对于显卡的驱动，电源管理才是罪魁祸首</p>
 ]]></content>
@@ -241,9 +237,7 @@
 </ol>
 <ul>
 <li><div class="note "><p>float, double</p>
-</div>
-
-</li>
+</div></li>
 </ul>
 <h3 id="Bool-类型"><a href="#Bool-类型" class="headerlink" title="_Bool 类型 ()"></a><code>_Bool</code> 类型 (<mark class="label ">C99</mark>)</h3><p><code>C99</code>添加的新的类型，用于表示布尔值 <code>true</code>,<code>false</code><br>占用 <mark class="label danger">1位</mark> 存储空间</p>
 <h3 id="可移植类型"><a href="#可移植类型" class="headerlink" title="可移植类型"></a>可移植类型</h3><div class="note "><ul>
@@ -311,6 +305,85 @@
       </tags>
   </entry>
   <entry>
+    <title>Netword control protocol</title>
+    <url>/posts/c4009546.html</url>
+    <content><![CDATA[<h1 id="Net-Netword-control-protocol"><a href="#Net-Netword-control-protocol" class="headerlink" title="Net(Netword control protocol)"></a>Net(Netword control protocol)</h1><p>网络控制协议</p>
+<div class="note primary"></div>
+]]></content>
+      <categories>
+        <category>网络协议</category>
+        <category>NCP</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>SpaceVim LSP:Haskell</title>
+    <url>/posts/7413cad6.html</url>
+    <content><![CDATA[<!-- vim-markdown-toc GFM -->
+
+<ul>
+<li><a href="#%E4%B8%BAspacevim-%E9%85%8D%E7%BD%AEhaskell%E7%9A%84lsp-server-%E4%B8%BAspacevim-%E9%85%8D%E7%BD%AEhaskell%E7%9A%84lsp-server">为SpaceVim 配置Haskell的LSP server# 为SpaceVim 配置Haskell的LSP server</a></li>
+<li><a href="#lsp-server-repo">LSP server repo</a></li>
+<li><a href="#%E9%87%87%E7%94%A8-ghcup%E9%85%8D%E7%BD%AE%E5%AE%8C%E6%95%B4%E7%9A%84haskell%E7%8E%AF%E5%A2%83">采用 <code>ghcup</code>配置完整的<code>haskell</code>环境</a></li>
+<li><a href="#cabal-%E5%88%9D%E5%A7%8B%E5%8C%96">cabal 初始化</a></li>
+<li><a href="#%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E6%BA%90%E4%B8%BA%E4%B8%8A%E6%B5%B7%E4%BA%A4%E5%A4%A7%E6%BA%90">修改默认源为上海交大源</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE%E6%98%BE%E7%A4%BA%E4%BE%9D%E8%B5%96%E6%80%A7%E7%9A%84%E6%96%87%E6%A1%A3-%E9%85%8D%E7%BD%AE%E6%98%BE%E7%A4%BA%E4%BE%9D%E8%B5%96%E6%80%A7%E7%9A%84%E6%96%87%E6%A1%A3">配置显示依赖性的文档# 配置显示依赖性的文档</a></li>
+<li><a href="#%E6%B3%A8%E5%86%8C%E5%88%B0%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84coc-%E6%B3%A8%E5%86%8C%E5%88%B0%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84coc">注册到客户端的Coc# 注册到客户端的Coc</a></li>
+<li><a href="#coc">Coc</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+
+<h2 id="为SpaceVim-配置Haskell的LSP-server-为SpaceVim-配置Haskell的LSP-server"><a href="#为SpaceVim-配置Haskell的LSP-server-为SpaceVim-配置Haskell的LSP-server" class="headerlink" title="为SpaceVim 配置Haskell的LSP server# 为SpaceVim 配置Haskell的LSP server"></a>为SpaceVim 配置Haskell的LSP server# 为SpaceVim 配置Haskell的LSP server</h2><div class="note default"><h2 id="LSP-server-repo"><a href="#LSP-server-repo" class="headerlink" title="LSP server repo"></a>LSP server repo</h2><p><mark class="label ">此方案失败</mark>: <del>Haskell: <a href="https://github.com/haskell/haskell-ide-engine.git">https://github.com/haskell/haskell-ide-engine.git</a></del></p>
+<h2 id="采用-ghcup配置完整的haskell环境"><a href="#采用-ghcup配置完整的haskell环境" class="headerlink" title="采用 ghcup配置完整的haskell环境"></a>采用 <code>ghcup</code>配置完整的<code>haskell</code>环境</h2><p>ghcup install:</p>
+<ul>
+<li><p><code>curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh</code></p>
+</li>
+<li><p><code>curl --proto &#39;=https&#39; --tlsv1.2 -LsSf https://mirror.sjtu.edu.cn/ghcup/script/install.sh | sh</code></p>
+</li>
+</ul>
+<h2 id="cabal-初始化"><a href="#cabal-初始化" class="headerlink" title="cabal 初始化"></a>cabal 初始化</h2><p><code>cabal update &amp;&amp; stack update</code></p>
+<h2 id="修改默认源为上海交大源"><a href="#修改默认源为上海交大源" class="headerlink" title="修改默认源为上海交大源"></a>修改默认源为上海交大源</h2><ul>
+<li>ghcup:<code>~/.ghcup/config.yaml</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">url-source:</span><br><span class="line">    OwnSource: <span class="string">&quot;https://mirror.sjtu.edu.cn/ghcup/yaml/ghcup/data/ghcup-0.0.5.yaml&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</div>
+
+<span id="more"></span>
+
+<h2 id="配置显示依赖性的文档-配置显示依赖性的文档"><a href="#配置显示依赖性的文档-配置显示依赖性的文档" class="headerlink" title="配置显示依赖性的文档# 配置显示依赖性的文档"></a>配置显示依赖性的文档# 配置显示依赖性的文档</h2><ul>
+<li><p>cabal</p>
+<ul>
+<li><code>~/.cabal/config</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">progtam-default-options</span><br><span class="line">  ghc-options: -haddock</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>或者针对某一项目使用:<br><code>cabal configure --ghc-options=-haddock</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="注册到客户端的Coc-注册到客户端的Coc"><a href="#注册到客户端的Coc-注册到客户端的Coc" class="headerlink" title="注册到客户端的Coc# 注册到客户端的Coc"></a>注册到客户端的Coc# 注册到客户端的Coc</h2><blockquote>
+<p>官方给出了大部分流行的前端配置方式: <a href="https://github.com/haskell/haskell-language-server#configuring-your-editor">Configuring your editor</a></p>
+</blockquote>
+<ul>
+<li>因为haskell在Coc里面没有coc插件,这种独立的server需要在Coc进行注册，才能成功调用server</li>
+</ul>
+<h2 id="Coc"><a href="#Coc" class="headerlink" title="Coc"></a><a href="https://github.com/haskell/haskell-language-server#coc">Coc</a></h2><p>在vim/nvim中使用 <code>:CocConfig</code> 进入Coc配置文件写入下面的内容</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;languageserver&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;haskell&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;command&quot;</span>: <span class="string">&quot;haskell-language-server-wrapper&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;args&quot;</span>: [<span class="string">&quot;--lsp&quot;</span>],</span><br><span class="line">      <span class="attr">&quot;rootPatterns&quot;</span>: [<span class="string">&quot;*.cabal&quot;</span>, <span class="string">&quot;stack.yaml&quot;</span>, <span class="string">&quot;cabal.project&quot;</span>, <span class="string">&quot;package.yaml&quot;</span>,<span class="string">&quot;hie.yaml&quot;</span>],</span><br><span class="line">      <span class="attr">&quot;filetypes&quot;</span>: [<span class="string">&quot;haskell&quot;</span>, <span class="string">&quot;lhaskell&quot;</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>—- &gt;到这里基本完成&lt;—-</p>
+]]></content>
+      <categories>
+        <category>SpaceVim</category>
+        <category>LSP</category>
+      </categories>
+      <tags>
+        <tag>LSP</tag>
+        <tag>ghcup</tag>
+        <tag>haskell</tag>
+        <tag>cabal</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VAX &amp;&amp; VMS</title>
     <url>/posts/37d5a867.html</url>
     <content><![CDATA[<h2 id="VAX"><a href="#VAX" class="headerlink" title="VAX"></a>VAX</h2><p>DEC公司开发的中端服务器计算机<br>按照DEC1978年的PDP-11标准<br>搭载当时最新的VMS系统<br>采用32位处理器</p>
@@ -334,78 +407,6 @@
       </categories>
       <tags>
         <tag>VAX&amp;&amp;VMS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>dotfiles-2.0</title>
-    <url>/posts/7ee6c840.html</url>
-    <content><![CDATA[<blockquote><!-- tital -->
-<blockquote class="blockquote-center">
-<h1 id="dotfiles-2-0"><a href="#dotfiles-2-0" class="headerlink" title="dotfiles-2.0"></a>dotfiles-2.0</h1>
-</blockquote>
-<!-- img -->
-<img data-src="/posts/7ee6c840/sidebar.png" class="">
-<footer><strong>github</strong><cite><a href="https://github.com/Axarva/dotfiles-2.0">github.com/Axarva/dotfiles-2.0</a></cite></footer></blockquote>
-
-<span id="more"></span>
-
-<h1 id="install-for-Arch-Linux"><a href="#install-for-Arch-Linux" class="headerlink" title="install for Arch Linux"></a>install for Arch Linux</h1><video src="https://www.youtube.com/watch?v=a8YJBGk8H4Q" preload="metadata" controlslist="nodownload" controls playsinline poster=""></video>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:Axarva&#x2F;dotfiles-2.0.git</span><br><span class="line">cd ~&#x2F;dptfiles-2.0</span><br><span class="line">sudo chmod +x install-on-arch.sh</span><br></pre></td></tr></table></figure>
-
-<h1 id="display-manager"><a href="#display-manager" class="headerlink" title="display-manager"></a>display-manager</h1><p>SDDM 开机自启动:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo systemctl enable sddm.service</span><br></pre></td></tr></table></figure>
-
-<h2 id="修改xinitrc可以实现多个桌面环境的管理"><a href="#修改xinitrc可以实现多个桌面环境的管理" class="headerlink" title="修改xinitrc可以实现多个桌面环境的管理"></a>修改xinitrc可以实现多个桌面环境的管理</h2><figure class="highlight plain"><figcaption><span>./.xinitrc</span></figcaption><table><tr><td class="code"><pre><span class="line">session&#x3D;$&#123;1:-xfce&#125;</span><br><span class="line"></span><br><span class="line">case $session in</span><br><span class="line">    kde               ) exec startkde;;</span><br><span class="line">    xm                ) exec xmonad;;</span><br><span class="line">    # Add session in this case</span><br><span class="line">    *                 ) exec $1;;</span><br><span class="line">esac</span><br></pre></td></tr></table></figure>
-
-<h3 id="reboot"><a href="#reboot" class="headerlink" title="reboot"></a>reboot</h3><p>会话选择<br><code>xinit session</code><br>or<br>启动会话<br><code>startx ~/.xinitrc session</code></p>
-]]></content>
-      <categories>
-        <category>arch</category>
-        <category>dotfiles-2.0</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>git add -A出现嵌入式仓库错误</title>
-    <url>/posts/b1520caa.html</url>
-    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>github 仓库已经清空，现在重新将本地文件上传备份，但是在add -A 操作时提示正在加入嵌入式仓库<br>git 给我推荐的两个操作分别是:</p>
-<ol>
-<li>子模块添加<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git submodule add &lt;url&gt; <span class="string">&quot;name&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li>在暂存去将这个嵌入的仓库删除<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rm --cached <span class="string">&quot;name&quot;</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="目前已经解决"><a href="#目前已经解决" class="headerlink" title="目前已经解决"></a>目前已经解决</h2><p>原因是在提示的文件夹下面有旧仓库的.git文件夹，删除后即可重新添加到新仓库了</p>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-        <tag>git error</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Netword control protocol</title>
-    <url>/posts/c4009546.html</url>
-    <content><![CDATA[<h1 id="Net-Netword-control-protocol"><a href="#Net-Netword-control-protocol" class="headerlink" title="Net(Netword control protocol)"></a>Net(Netword control protocol)</h1><p>网络控制协议</p>
-<div class="note primary"></div>
-]]></content>
-      <categories>
-        <category>网络协议</category>
-        <category>NCP</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>pandoc</title>
-    <url>/posts/bc4b56d9.html</url>
-    <content><![CDATA[<h1 id="文档转换工具"><a href="#文档转换工具" class="headerlink" title="文档转换工具"></a>文档转换工具</h1><p><a href="https://www.pandoc.org/installing.html#linux">pandoc</a><br><code>yay -S pandoc</code></p>
-<div class="note warning"><h2 id="不支持PDF转其他格式"><a href="#不支持PDF转其他格式" class="headerlink" title="不支持PDF转其他格式"></a>不支持PDF转其他格式</h2><p>pandoc can convert to PDF, but not from PDF! </p>
-</div>
-<p>好烦看了半天，找了挺久，还是在线PDF转DOCX好使, tu了~</p>
-<h1 id="pandoc支持格式"><a href="#pandoc支持格式" class="headerlink" title="pandoc支持格式"></a>pandoc支持格式</h1><img data-src="/posts/bc4b56d9/diagram.jpg" class="">
-]]></content>
-      <tags>
-        <tag>tool</tag>
       </tags>
   </entry>
   <entry>
@@ -437,14 +438,11 @@
 <li><p>xmonad-contrib-git or xmonad-contrib – 常用的算法和库</p>
 <div class="note "><p><code>yay -S xmonad-contrib</code>
   </p>
-</div>
-</li>
+</div></li>
 <li><p>extra</p>
 <div class="note "><p><code>cabal update &amp;&amp; cabal install --lib extra</code> – 如果是安装一些程序的话需要配置cabal,解决依赖问题<br><code>ghci -v</code><br><code>import </code>引入要导入的模块
   </p>
-</div>
-
-</li>
+</div></li>
 </ul>
 <details class="note "><summary><p>warring</p>
 </summary>
@@ -456,6 +454,113 @@
         <category>arch</category>
         <category>xmonad</category>
       </categories>
+  </entry>
+  <entry>
+    <title>dotfiles-2.0</title>
+    <url>/posts/7ee6c840.html</url>
+    <content><![CDATA[<blockquote><!-- tital -->
+<blockquote class="blockquote-center">
+<h1 id="dotfiles-2-0"><a href="#dotfiles-2-0" class="headerlink" title="dotfiles-2.0"></a>dotfiles-2.0</h1>
+</blockquote>
+<!-- img -->
+<img data-src="/posts/7ee6c840/sidebar.png" class="">
+<footer><strong>github</strong><cite><a href="https://github.com/Axarva/dotfiles-2.0">github.com/Axarva/dotfiles-2.0</a></cite></footer></blockquote>
+
+<span id="more"></span>
+
+<h1 id="install-for-Arch-Linux"><a href="#install-for-Arch-Linux" class="headerlink" title="install for Arch Linux"></a>install for Arch Linux</h1><video src="https://www.youtube.com/watch?v=a8YJBGk8H4Q" preload="metadata" controlslist="nodownload" controls playsinline poster=""></video>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:Axarva/dotfiles-2.0.git</span><br><span class="line">cd ~/dptfiles-2.0</span><br><span class="line">sudo chmod +x install-on-arch.sh</span><br></pre></td></tr></table></figure>
+
+<h1 id="display-manager"><a href="#display-manager" class="headerlink" title="display-manager"></a>display-manager</h1><p>SDDM 开机自启动:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo systemctl enable sddm.service</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改xinitrc可以实现多个桌面环境的管理"><a href="#修改xinitrc可以实现多个桌面环境的管理" class="headerlink" title="修改xinitrc可以实现多个桌面环境的管理"></a>修改xinitrc可以实现多个桌面环境的管理</h2><figure class="highlight plaintext"><figcaption><span>./.xinitrc</span></figcaption><table><tr><td class="code"><pre><span class="line">session=$&#123;1:-xfce&#125;</span><br><span class="line"></span><br><span class="line">case $session in</span><br><span class="line">    kde               ) exec startkde;;</span><br><span class="line">    xm                ) exec xmonad;;</span><br><span class="line">    # Add session in this case</span><br><span class="line">    *                 ) exec $1;;</span><br><span class="line">esac</span><br></pre></td></tr></table></figure>
+
+<h3 id="reboot"><a href="#reboot" class="headerlink" title="reboot"></a>reboot</h3><p>会话选择<br><code>xinit session</code><br>or<br>启动会话<br><code>startx ~/.xinitrc session</code></p>
+]]></content>
+      <categories>
+        <category>arch</category>
+        <category>dotfiles-2.0</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>git add -A出现嵌入式仓库错误</title>
+    <url>/posts/b1520caa.html</url>
+    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>github 仓库已经清空，现在重新将本地文件上传备份，但是在add -A 操作时提示正在加入嵌入式仓库<br>git 给我推荐的两个操作分别是:</p>
+<ol>
+<li>子模块添加<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git submodule add &lt;url&gt; <span class="string">&quot;name&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>在暂存去将这个嵌入的仓库删除<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rm --cached <span class="string">&quot;name&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="目前已经解决"><a href="#目前已经解决" class="headerlink" title="目前已经解决"></a>目前已经解决</h2><p>原因是在提示的文件夹下面有旧仓库的.git文件夹，删除后即可重新添加到新仓库了</p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>git error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git base</title>
+    <url>/posts/11a03e53.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Git 是一个常用的版本管理软件</p>
+<blockquote>
+<p>关于<code>Git</code>具体是做什么的就不赘述了。</p>
+</blockquote>
+<p>基础的用法其实很简单，但是涉及到具体原理，我们到底怎么通过<code>Git</code>管理我们的文件，大部分人还是一头雾水的。</p>
+<blockquote>
+<p>这篇文章主要是记录我自己查阅文档时的理解</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="本地和远程仓库之间的差异"><a href="#本地和远程仓库之间的差异" class="headerlink" title="本地和远程仓库之间的差异"></a>本地和远程仓库之间的差异</h2><h3 id="本地仓库"><a href="#本地仓库" class="headerlink" title="本地仓库"></a>本地仓库</h3><p><code>Git</code>在本地中一共分有<mark class="label warring">三大区</mark></p>
+<ul>
+<li>工作区 (Working Space)</li>
+<li>版本库 (Commit)</li>
+<li>暂存区 (Stage/Index)</li>
+</ul>
+]]></content>
+      <categories>
+        <category>git</category>
+        <category>base</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git-rm</title>
+    <url>/posts/cad36f94.html</url>
+    <content><![CDATA[<p>[TOC]</p>
+<p>一、<br>Git 本地有三种分区:</p>
+<ul>
+<li>工作区(Working Directory)  <div class="note "><p>直接编辑文件的区域，一般理解当前目录就是工作区
+    </p>
+</div></li>
+<li>暂存区(Stage/Index)</li>
+</ul>
+]]></content>
+      <categories>
+        <category>git</category>
+        <category>rm</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pandoc</title>
+    <url>/posts/bc4b56d9.html</url>
+    <content><![CDATA[<h1 id="文档转换工具"><a href="#文档转换工具" class="headerlink" title="文档转换工具"></a>文档转换工具</h1><p><a href="https://www.pandoc.org/installing.html#linux">pandoc</a><br><code>yay -S pandoc</code></p>
+<div class="note warning"><h2 id="不支持PDF转其他格式"><a href="#不支持PDF转其他格式" class="headerlink" title="不支持PDF转其他格式"></a>不支持PDF转其他格式</h2><p>pandoc can convert to PDF, but not from PDF! </p>
+</div>
+<p>好烦看了半天，找了挺久，还是在线PDF转DOCX好使, tu了~</p>
+<h1 id="pandoc支持格式"><a href="#pandoc支持格式" class="headerlink" title="pandoc支持格式"></a>pandoc支持格式</h1><img data-src="/posts/bc4b56d9/diagram.jpg" class="">
+]]></content>
+      <tags>
+        <tag>tool</tag>
+      </tags>
   </entry>
   <entry>
     <title>mermaid Syntax Error in graph</title>
@@ -483,9 +588,7 @@ A[Hard] --&gt;|Text| B(Round)
 B --&gt; C{Decision}
 C --&gt;|One| D[Result 1]
 C --&gt;|Two| E[Result 2]
-</pre></div>
-
-</li>
+</pre></div></li>
 </ol>
 <p>我的示例代码是从示例中复制过来的， 为什么官方文档中的示例图像正常显示，而我的却不行</p>
 
@@ -596,9 +699,7 @@ Bob--&gt;&gt;John: Jolly good!
     <content><![CDATA[<h2 id="阅读统计"><a href="#阅读统计" class="headerlink" title="阅读统计"></a>阅读统计</h2><p>基于leancloud的文章阅读统计，将显示在文章标题下</p>
 <ol>
 <li>leancloud<blockquote><p>在leancloud 官网注册账号</p>
-<footer><strong>官网</strong><cite><a href="https://console.leancloud.cn">leancloud</a></cite></footer></blockquote>
-
-</li>
+<footer><strong>官网</strong><cite><a href="https://console.leancloud.cn">leancloud</a></cite></footer></blockquote></li>
 </ol>
 <span id="more"></span>
 <ol start="2">
@@ -614,8 +715,7 @@ Bob--&gt;&gt;John: Jolly good!
 提示计数器没有初始化，在网上查找到一个方法<figure class="highlight yaml"><figcaption><span>将security设为false, 摘取自</span><a href="https://blog.csdn.net/w573719227/article/details/100704952">轩辕御龙</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">leancloud_visitors:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">app_id:</span> <span class="comment"># 填入leancloud&lt;app_id&gt;</span></span><br><span class="line">  <span class="attr">app_key:</span> <span class="comment"># &lt;app_key&gt;</span></span><br><span class="line">  <span class="comment"># Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security</span></span><br><span class="line">  <span class="comment"># If you don&#x27;t care about security in leancloud counter and just want to use it directly</span></span><br><span class="line">  <span class="comment"># (without hexo-leancloud-counter-security plugin), set `security` to `false`.</span></span><br><span class="line">  <span class="comment"># 解决办法是用npm 下载hexo-leancloud-counter-security 模块</span></span><br><span class="line">  <span class="comment"># 然后将security 设为false</span></span><br><span class="line">  <span class="attr">security:</span> <span class="literal">false</span> <span class="comment">#如果要为true</span></span><br><span class="line">  <span class="attr">betterPerformance:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure></li>
 <li><div class="note danger"><p>但是如果你一定要启用security的话,hexo g遇到以下报错:<br>Cannot read property ‘enable_sync’ of undefined</p>
 </div>
-<figure class="highlight yaml"><figcaption><span>参照以下建议在`_config.yml`中添加 摘取自</span><a href="https://blog.csdn.net/qq_33840251/article/details/103899972">清欢ysy</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">leancloud_counter_security:</span></span><br><span class="line">  <span class="attr">enable_sync:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">app_id:</span> <span class="comment"># leancloud id</span></span><br><span class="line">  <span class="attr">app_key:</span> <span class="comment"># leancloud key</span></span><br><span class="line">  <span class="attr">username:</span> <span class="comment"># 用户名/邮箱</span></span><br><span class="line">  <span class="attr">password:</span> <span class="comment"># 密码</span></span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight yaml"><figcaption><span>参照以下建议在`_config.yml`中添加 摘取自</span><a href="https://blog.csdn.net/qq_33840251/article/details/103899972">清欢ysy</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">leancloud_counter_security:</span></span><br><span class="line">  <span class="attr">enable_sync:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">app_id:</span> <span class="comment"># leancloud id</span></span><br><span class="line">  <span class="attr">app_key:</span> <span class="comment"># leancloud key</span></span><br><span class="line">  <span class="attr">username:</span> <span class="comment"># 用户名/邮箱</span></span><br><span class="line">  <span class="attr">password:</span> <span class="comment"># 密码</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 ]]></content>
       <categories>
@@ -637,17 +737,13 @@ Bob--&gt;&gt;John: Jolly good!
 <p>通常这种写法只有旧的标准支持,使用现在的编译器则会默其返回值为int</p>
 </li>
 <li><p>这种声明方式不推荐，因为返回值是给系统的，返回空则系统就无法获取程序退出状态</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span> <span class="params">()</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span> <span class="params">()</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>虽然形参列表没有参数，但是没有声明为void，则main函数依旧可以获取参数<br>程序中其他自定义函数也一样<br>入参没有类型限制，也可以不传参数</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>无参，程序就无法获取命令行参数, 如果入参则会报错</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure></li>
 <li><p> 两个入参，第一个参数为命令行参数个数，第二个入参为命令行参数数组<br>入参的参数名可以自定义,不一定要下面示例中的名称</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">int</span> argv, <span class="keyword">char</span> *argc[])</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">int</span> argv, <span class="keyword">char</span> *argc[])</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>三个入参</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">int</span> argv, <span class="keyword">char</span> *argc[], <span class="keyword">char</span> *envp[])</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
 <p>前两种参数和第五种一样，但是第三个参数通常为编译器扩展的一个参数<br>但是全局变量environ可以代替参数envp的作用，获取或设置环境变量可以使用getenv或putenv，所以使用这个扩展参数其实没有必要</p>
@@ -665,18 +761,6 @@ Bob--&gt;&gt;John: Jolly good!
       </tags>
   </entry>
   <entry>
-    <title>正则表达式</title>
-    <url>/posts/2f57a694.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-<h1 id="读《精通正则表达式》"><a href="#读《精通正则表达式》" class="headerlink" title="读《精通正则表达式》"></a>读《精通正则表达式》</h1>
-</blockquote>
-]]></content>
-      <categories>
-        <category>读书</category>
-        <category>正则表达式</category>
-      </categories>
-  </entry>
-  <entry>
     <title>关于mermaid syntax error in graph问题的解决方案</title>
     <url>/posts/4d5f9c23.html</url>
     <content><![CDATA[<div class="note danger"><h1 id="这个错误在最新版本已经修复！！"><a href="#这个错误在最新版本已经修复！！" class="headerlink" title="这个错误在最新版本已经修复！！"></a>这个错误在最新版本已经修复！！</h1></div>
@@ -690,7 +774,7 @@ Bob--&gt;&gt;John: Jolly good!
 <p>引起问题的原因是我安装了<mark class="label ">hexo-neat</mark>, hexo-neat 在压缩post时会将文章中的换行符删除，而mermaid对空格和换行符敏感，所以导致了html语法解释器报错</p>
 <span id="more"></span>
 <h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>有两种方法避免<br>一种是禁用hexo-neat插件<br>另一种是用一种html的局部忽略语法将mermaid代码部分包裹在<code>&lt;!-- htmlmin:ignore --&gt;</code>中</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- htmlmin:ignore --&gt;</span><br><span class="line">&lt;pre class&#x3D;&quot;mermaid&quot;&gt;</span><br><span class="line">sequenceDiagram</span><br><span class="line">Alice-&gt;&gt;John: Hello John, how are you?</span><br><span class="line">loop Healthcheck</span><br><span class="line">    John-&gt;&gt;John: Fight against hypochondria</span><br><span class="line">end</span><br><span class="line">Note right of John: Rational thoughts!</span><br><span class="line">John--&gt;&gt;Alice: Great!</span><br><span class="line">John-&gt;&gt;Bob: How about you?</span><br><span class="line">Bob--&gt;&gt;John: Jolly good!</span><br><span class="line">&lt;&#x2F;pre&gt;</span><br><span class="line">&lt;!-- htmlmin:ignore --&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- htmlmin:ignore --&gt;</span><br><span class="line">&lt;pre class=&quot;mermaid&quot;&gt;</span><br><span class="line">sequenceDiagram</span><br><span class="line">Alice-&amp;gt;&amp;gt;John: Hello John, how are you?</span><br><span class="line">loop Healthcheck</span><br><span class="line">    John-&amp;gt;&amp;gt;John: Fight against hypochondria</span><br><span class="line">end</span><br><span class="line">Note right of John: Rational thoughts!</span><br><span class="line">John--&amp;gt;&amp;gt;Alice: Great!</span><br><span class="line">John-&amp;gt;&amp;gt;Bob: How about you?</span><br><span class="line">Bob--&amp;gt;&amp;gt;John: Jolly good!</span><br><span class="line">&lt;/pre&gt;</span><br><span class="line">&lt;!-- htmlmin:ignore --&gt;</span><br></pre></td></tr></table></figure>
 <p>实现:</p>
 <pre class="mermaid">
 sequenceDiagram
@@ -714,5 +798,17 @@ Bob--&gt;&gt;John: Jolly good!
       <tags>
         <tag>mermaid</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>正则表达式</title>
+    <url>/posts/2f57a694.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+<h1 id="读《精通正则表达式》"><a href="#读《精通正则表达式》" class="headerlink" title="读《精通正则表达式》"></a>读《精通正则表达式》</h1>
+</blockquote>
+]]></content>
+      <categories>
+        <category>读书</category>
+        <category>正则表达式</category>
+      </categories>
   </entry>
 </search>
