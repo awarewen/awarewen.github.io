@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2021 Happy New Year</title>
+    <url>/posts/292f001b.html</url>
+    <content><![CDATA[<h2 id="2021-新年快乐！"><a href="#2021-新年快乐！" class="headerlink" title="2021 新年快乐！"></a>2021 新年快乐！</h2><p>2020 已经过去，今天既是过去的终点也是新的起点</p>
+<p>2020 许多目标已经达成<br>2021 希望能做好自己的知识管理，从学习向学如何学习过度</p>
+<p>新年快乐！</p>
+]]></content>
+      <tags>
+        <tag>新年祈愿</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ARPAnet</title>
+    <url>/posts/28463431.html</url>
+    <content><![CDATA[<h1 id="ARPAnet"><a href="#ARPAnet" class="headerlink" title="ARPAnet"></a>ARPAnet</h1><p>ARPAnet 始于美苏冷战，由美国国防部(DoD)领导利克利德提出的一种”大又分散的巨型网络”<br>1969年9月问世，是世界上第一个运营的封包交换网络</p>
+]]></content>
+      <categories>
+        <category>计算机网络历史</category>
+        <category>ARPAnet</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Arch 挂起后黑屏</title>
     <url>/posts/6c736e1c.html</url>
     <content><![CDATA[<div class="note "><p>一个困扰许久的问题:<br>系统在锁屏后挂起，但是用鼠标和键盘经常无法唤起桌面</p>
@@ -37,38 +58,6 @@
 ]]></content>
       <categories>
         <category>arch - xorg</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>2021 Happy New Year</title>
-    <url>/posts/292f001b.html</url>
-    <content><![CDATA[<h2 id="2021-新年快乐！"><a href="#2021-新年快乐！" class="headerlink" title="2021 新年快乐！"></a>2021 新年快乐！</h2><p>2020 已经过去，今天既是过去的终点也是新的起点</p>
-<p>2020 许多目标已经达成<br>2021 希望能做好自己的知识管理，从学习向学如何学习过度</p>
-<p>新年快乐！</p>
-]]></content>
-      <tags>
-        <tag>新年祈愿</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ARPAnet</title>
-    <url>/posts/28463431.html</url>
-    <content><![CDATA[<h1 id="ARPAnet"><a href="#ARPAnet" class="headerlink" title="ARPAnet"></a>ARPAnet</h1><p>ARPAnet 始于美苏冷战，由美国国防部(DoD)领导利克利德提出的一种”大又分散的巨型网络”<br>1969年9月问世，是世界上第一个运营的封包交换网络</p>
-]]></content>
-      <categories>
-        <category>计算机网络历史</category>
-        <category>ARPAnet</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Netword control protocol</title>
-    <url>/posts/c4009546.html</url>
-    <content><![CDATA[<h1 id="Net-Netword-control-protocol"><a href="#Net-Netword-control-protocol" class="headerlink" title="Net(Netword control protocol)"></a>Net(Netword control protocol)</h1><p>网络控制协议</p>
-<div class="note primary"></div>
-]]></content>
-      <categories>
-        <category>网络协议</category>
-        <category>NCP</category>
       </categories>
   </entry>
   <entry>
@@ -270,6 +259,84 @@
       </tags>
   </entry>
   <entry>
+    <title>Netword control protocol</title>
+    <url>/posts/c4009546.html</url>
+    <content><![CDATA[<h1 id="Net-Netword-control-protocol"><a href="#Net-Netword-control-protocol" class="headerlink" title="Net(Netword control protocol)"></a>Net(Netword control protocol)</h1><p>网络控制协议</p>
+<div class="note primary"></div>
+]]></content>
+      <categories>
+        <category>网络协议</category>
+        <category>NCP</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>SHELL和插件</title>
+    <url>/posts/a8f47976.html</url>
+    <content><![CDATA[<h1 id="选取一个合适的shell"><a href="#选取一个合适的shell" class="headerlink" title="选取一个合适的shell"></a>选取一个合适的shell</h1><p>  可选的shell很多，这里列出常选的：<br>  <div class="note "><ul>
+<li>zsh</li>
+<li>fish</li>
+<li>bash</li>
+<li>…</li>
+</ul>
+</div></p>
+<h2 id="bash"><a href="#bash" class="headerlink" title="bash"></a>bash</h2><p>  这是一个老牌的shell，大部分的linux系统自带可以说具有最广泛的兼容<br>  同样与其他的shell对比样式和功能相对较弱的</p>
+<h2 id="zsh"><a href="#zsh" class="headerlink" title="zsh"></a>zsh</h2><p>  zsh我用的比较久，这也是大部分的人比较喜爱的shell了，有活跃的社区和教程<br>  有很多好用的插件</p>
+<h3 id="必备"><a href="#必备" class="headerlink" title="必备"></a>必备</h3><ul>
+<li>zsh-autosuggestons: 自动补全插件</li>
+<li>zsh-syntax-highlighting: 命令高亮</li>
+</ul>
+<h3 id="zinit"><a href="#zinit" class="headerlink" title="zinit"></a>zinit</h3><p>  zsh目前比较火的插件管理器，Turbo mode延时加载使得你的zsh可以达到最快的启动速度，对比安装了许多插件的zsh可以做到<mark class="label ">10倍</mark>的提升</p>
+<h4 id="Install-zinit"><a href="#Install-zinit" class="headerlink" title="Install zinit"></a>Install zinit</h4><h5 id="自动安装"><a href="#自动安装" class="headerlink" title="自动安装"></a>自动安装</h5>  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)&quot;</span><br></pre></td></tr></table></figure>
+
+<h5 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a>手动安装</h5><ol>
+<li>先把源代码克隆下来<figure class="highlight plaintext"><figcaption><span>createDir:~/.config/zinit/bin</span></figcaption><table><tr><td class="code"><pre><span class="line">git clone https://github.com/zdharma/zinit.git ~/.config/.zinit/bin</span><br></pre></td></tr></table></figure></li>
+<li>在 <code>~/.zshrc</code> 顶端添加 <code>zinit</code> 的路径<br><code>source ~/.config/zinit/bin</code></li>
+<li>重新启动终端，用 <mark class="label success">zinit self-update</mark> 进行自编译</li>
+</ol>
+<h5 id="zinit-加载插件"><a href="#zinit-加载插件" class="headerlink" title="zinit 加载插件"></a>zinit 加载插件</h5><p>  加载插件有几种不同的模式</p>
+<ul>
+<li><code>zinit snippet</code>: 片段式，可以加载一个插件中的某一个脚本或者代码段</li>
+<li><code>zinit load</code>: 加载整个repo 或者单个脚本</li>
+<li><code>zinit light</code>: load 的轻量化加载版本</li>
+</ul>
+<h4 id="zinit-常见的插件安装"><a href="#zinit-常见的插件安装" class="headerlink" title="zinit 常见的插件安装"></a>zinit 常见的插件安装</h4><h5 id="CLI-命令补全高亮"><a href="#CLI-命令补全高亮" class="headerlink" title="CLI 命令补全高亮"></a>CLI 命令补全高亮</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">zinit wait lucid for \</span><br><span class="line"> atinit&quot;ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay&quot; \</span><br><span class="line">     zsh-users/zsh-syntax-highlighting\</span><br><span class="line">      blockf \</span><br><span class="line">          zsh-users/zsh-completions \</span><br><span class="line">           atload&quot;!_zsh_autosuggest_start&quot; \</span><br><span class="line">               zsh-users/zsh-autosuggestions</span><br></pre></td></tr></table></figure>
+
+<h5 id="zinit-oh-my-zsh"><a href="#zinit-oh-my-zsh" class="headerlink" title="zinit + oh my zsh"></a>zinit + oh my zsh</h5><h5 id="zinit-powerlevel10k"><a href="#zinit-powerlevel10k" class="headerlink" title="zinit + powerlevel10k"></a>zinit + powerlevel10k</h5><p>  zinit ice depth=1; zinit light romkatv/powerlevel10k</p>
+<h4 id="powerlevel10k-install"><a href="#powerlevel10k-install" class="headerlink" title="powerlevel10k install"></a>powerlevel10k install</h4><p>  powerlevel10k 是一个zsh主题，快速，美观，强大<br>  这里是AUR中官方的包<br>  <figure class="highlight plaintext"><figcaption><span>Install powerlevel10k</span></figcaption><table><tr><td class="code"><pre><span class="line">yay -S --noconfirm zsh-theme-powerlevel10k-git</span><br><span class="line">echo &#x27;source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme&#x27; &gt;&gt;~/.zshrc</span><br></pre></td></tr></table></figure></p>
+<h5 id="Unintall-powerlevel10k"><a href="#Unintall-powerlevel10k" class="headerlink" title="Unintall powerlevel10k"></a>Unintall powerlevel10k</h5><p>  将一下配置从 <code>.zshrc</code> 配置文件中移除<br>  <figure class="highlight plaintext"><figcaption><span>warning in ~/.zshrc</span></figcaption><table><tr><td class="code"><pre><span class="line">if [[ -r &quot;$&#123;XDG_CACHE_HOME:-$HOME/.cache&#125;/p10k-instant-prompt-$&#123;(%):-%n&#125;.zsh&quot; ]]; then</span><br><span class="line">source &quot;$&#123;XDG_CACHE_HOME:-$HOME/.cache&#125;/p10k-instant-prompt-$&#123;(%):-%n&#125;.zsh&quot;</span><br><span class="line"></span><br><span class="line">[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh</span><br><span class="line">fi</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h5 id="about-instant-prompt"><a href="#about-instant-prompt" class="headerlink" title="about instant prompt"></a>about instant prompt</h5><p>即使提示：<br>p10k 可以加速你的zsh启动，当你的zsh装了很多插件的时候，p10k 将会自动解决这些加载缓慢的情况<br>如果你开启了即使提示，将会在每一次zsh configure initialization 的时候得到一些控制台输出的信息</p>
+<ul>
+<li>建议开启这个优化功能，但是如果想关闭每次初始化的提示可以在配置文件下修改如下选项<br><code>~/.p10k.zsh</code><mark class="label primary">Typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet</mark>
+这将会关闭提示，但是p10k仍将在后台优化你的zsh启动时间</li>
+</ul>
+<h4 id="oh-my-zsh-install"><a href="#oh-my-zsh-install" class="headerlink" title="oh my zsh install"></a>oh my zsh install</h4><h2 id="fish"><a href="#fish" class="headerlink" title="fish"></a>fish</h2><p>  fish我用过一段时间，开箱即用，比较热门的功能全部自带了</p>
+<h3 id="fisher"><a href="#fisher" class="headerlink" title="fisher"></a>fisher</h3><h3 id="oh-my-fish"><a href="#oh-my-fish" class="headerlink" title="oh my fish"></a>oh my fish</h3>  <blockquote class="blockquote-center">
+<h1 id="Plugins"><a href="#Plugins" class="headerlink" title="Plugins"></a>Plugins</h1>
+</blockquote>
+
+  <img data-src="/posts/a8f47976/starship.png" class="">
+<h2 id="Starship"><a href="#Starship" class="headerlink" title="Starship"></a>Starship</h2><p>  repo: <a href="https://github.com/starship/starship/">starship/starship</a></p>
+  <div class="note success"><ul>
+<li> 快： 很快 —— 真的真的非常快！ rocket</li>
+<li> 定制化： 可定制各种各样的提示符。</li>
+<li> 通用： 适用于任何 Shell、任何操作系统。</li>
+<li> 智能： 一目了然地显示相关信息。</li>
+<li> 功能丰富： 支持所有你喜欢的工具。</li>
+<li> 易用： 安装快速 —— 几分钟就可上手。</li>
+</ul>
+</div>
+
+<h3 id="starship-config"><a href="#starship-config" class="headerlink" title="starship config"></a>starship config</h3><p>  创建配置文件<br>  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir -p ~/.config &amp;&amp; touch ~/.config/starship.toml</span><br></pre></td></tr></table></figure></p>
+  <img data-src="/posts/a8f47976/ZVM.png" class="">
+<h2 id="zsh-vi-mode-ZVM"><a href="#zsh-vi-mode-ZVM" class="headerlink" title="zsh-vi-mode (ZVM)"></a>zsh-vi-mode (ZVM)</h2><p>  repo: <a href="https://github.com/jeffreytse/zsh-vi-mode">jeffreytse/zsh-vi-mode</a></p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3>  <div class="note "><ol>
+<li>使用zinit 安装 ZVM</li>
+</ol>
+</div>
+<p>  用这个插件唯一蛋疼的地方就是光标显示了,在shell中，特别是开了多个shell的情况下你很难分出切换到了哪个窗口,所以我建议调整两个选项<br>  <figure class="highlight zsh"><figcaption><span>`~/.zinit/plugins/jeffreytse---zsh-vi-mode`</span></figcaption><table><tr><td class="code"><pre><span class="line">ZVM_CURSOR_STYLE_ENABLED=<span class="literal">false</span> <span class="comment"># 关闭默认光标样式，你也可以修改为其他样式</span></span><br><span class="line">ZVM_VI_INSERT_ESCAPE_BINDKEY=jk <span class="comment"># 启用jk快捷切换模式</span></span><br></pre></td></tr></table></figure></p>
+]]></content>
+  </entry>
+  <entry>
     <title>SpaceVim LSP:Haskell</title>
     <url>/posts/7413cad6.html</url>
     <content><![CDATA[<!-- vim-markdown-toc GFM -->
@@ -416,38 +483,6 @@
       </tags>
   </entry>
   <entry>
-    <title>dotfiles-2.0</title>
-    <url>/posts/7ee6c840.html</url>
-    <content><![CDATA[<blockquote><!-- tital -->
-<blockquote class="blockquote-center">
-<h1 id="dotfiles-2-0"><a href="#dotfiles-2-0" class="headerlink" title="dotfiles-2.0"></a>dotfiles-2.0</h1>
-</blockquote>
-<!-- img -->
-<img data-src="/posts/7ee6c840/sidebar.png" class="">
-<footer><strong>github</strong><cite><a href="https://github.com/Axarva/dotfiles-2.0">github.com/Axarva/dotfiles-2.0</a></cite></footer></blockquote>
-
-<span id="more"></span>
-
-<h1 id="install-for-Arch-Linux"><a href="#install-for-Arch-Linux" class="headerlink" title="install for Arch Linux"></a>install for Arch Linux</h1><video src="https://www.youtube.com/watch?v=a8YJBGk8H4Q" preload="metadata" controlslist="nodownload" controls playsinline poster=""></video>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:Axarva/dotfiles-2.0.git</span><br><span class="line">cd ~/dptfiles-2.0</span><br><span class="line">sudo chmod +x install-on-arch.sh</span><br></pre></td></tr></table></figure>
-
-<h1 id="display-manager"><a href="#display-manager" class="headerlink" title="display-manager"></a>display-manager</h1><p>SDDM 开机自启动:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo systemctl enable sddm.service</span><br></pre></td></tr></table></figure>
-
-<h2 id="修改xinitrc可以实现多个桌面环境的管理"><a href="#修改xinitrc可以实现多个桌面环境的管理" class="headerlink" title="修改xinitrc可以实现多个桌面环境的管理"></a>修改xinitrc可以实现多个桌面环境的管理</h2><figure class="highlight plaintext"><figcaption><span>./.xinitrc</span></figcaption><table><tr><td class="code"><pre><span class="line">session=$&#123;1:-xfce&#125;</span><br><span class="line"></span><br><span class="line">case $session in</span><br><span class="line">    kde               ) exec startkde;;</span><br><span class="line">    xm                ) exec xmonad;;</span><br><span class="line">    # Add session in this case</span><br><span class="line">    *                 ) exec $1;;</span><br><span class="line">esac</span><br></pre></td></tr></table></figure>
-
-<h3 id="reboot"><a href="#reboot" class="headerlink" title="reboot"></a>reboot</h3><p>会话选择<br><code>xinit session</code><br>or<br>启动会话<br><code>startx ~/.xinitrc session</code></p>
-]]></content>
-      <categories>
-        <category>arch</category>
-        <category>xmonad</category>
-        <category>config</category>
-      </categories>
-      <tags>
-        <tag>config</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git add -A出现嵌入式仓库错误</title>
     <url>/posts/b1520caa.html</url>
     <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>github 仓库已经清空，现在重新将本地文件上传备份，但是在add -A 操作时提示正在加入嵌入式仓库<br>git 给我推荐的两个操作分别是:</p>
@@ -466,6 +501,31 @@
       </tags>
   </entry>
   <entry>
+    <title>ln</title>
+    <url>/posts/229b7a0b.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+
+</blockquote>
+
+<h1 id="软链接-ln"><a href="#软链接-ln" class="headerlink" title="软链接 ln"></a>软链接 <code>ln</code></h1><div class="note "><p>-f : 链结时先将与 dist 同档名的档案删除<br>-d : 允许系统管理者硬链结自己的目录<br>　-i : 在删除与 dist 同档名的档案时先进行询问<br>　-n : 在进行软连结时，将 dist 视为一般的档案<br>　-s : 进行软链结(symbolic link)<br>　-v : 在连结之前显示其档名<br>　-b : 将在链结时会被覆写或删除的档案进行备份<br>　-S SUFFIX : 将备份的档案都加上 SUFFIX 的字尾<br>　-V METHOD : 指定备份的方式<br>　–help : 显示辅助说明<br>　–version : 显示版本</p>
+</div>
+
+<h2 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h2><ul>
+<li><mark class="label ">`ln -s`</mark>
+<ul>
+<li><code>ln -s 源文件 目标文件</code></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>linux - command</category>
+      </categories>
+      <tags>
+        <tag>linux常用命令</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mySpaceVim</title>
     <url>/posts/529dff6c.html</url>
     <content><![CDATA[<p><img data-src="https://user-images.githubusercontent.com/13142418/121829909-64cb5380-ccf6-11eb-9d5a-f576fa63e69c.png" alt="SpaceVim"></p>
@@ -476,6 +536,49 @@
       </categories>
       <tags>
         <tag>SpaceVim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>nord and light</title>
+    <url>/posts/834bb440.html</url>
+    <content><![CDATA[<h1 id="GitHub转载"><a href="#GitHub转载" class="headerlink" title="GitHub转载"></a>GitHub转载</h1><ul>
+<li>源地址参见：<a href="https://github.com/ayamir/nord-and-light">repo</a></li>
+</ul>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p><code>git clone https://github.com/ayamir/nord-and-light.git</code><br><code>cd nord-and-light</code></p>
+<div class="note "><h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><ul>
+<li>xsettingsd: 在运行时热切换全局GTK主题</li>
+<li>feh: 设置壁纸</li>
+<li>fish: 需要的shell</li>
+<li>dunst: 守护进程</li>
+<li>mako(wayland): wayland守护进程</li>
+<li>alacritty &amp;&amp; kitty: 模拟终端, 支持在运行时切换配置</li>
+<li>rofi / dmenu: 程序启动器</li>
+<li>wofi(wayland): wayland的程序启动器</li>
+<li>zathura: PDF阅读器</li>
+<li>Global GTK2/3 theme<ul>
+<li>Nordic</li>
+<li>Orchis-light</li>
+</ul>
+</li>
+</ul>
+<h3 id="其他可选项"><a href="#其他可选项" class="headerlink" title="其他可选项"></a>其他可选项</h3><ul>
+<li>firefox</li>
+<li>vim</li>
+<li>doom emacs<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/hlissner/doom-emacs ~/.emacs.d</span><br><span class="line">~/.emacs.d/bin/doom install</span><br></pre></td></tr></table></figure>
+<div class="note "><p>我直接用 <code>doom install</code>还是有点问题的，它提示我 <mark class="label warning"><code>connot load files</code></mark><br>如果你也有同样情况可以用 <code>doom sync</code> 试一下, 老是下载不下来插件，可以开代理试下</p>
+</div></li>
+</ul>
+<ul>
+<li>vscode</li>
+<li>sublime</li>
+<li>fcitx5</div></li>
+</ul>
+<h1 id="将-nord-and-light-中对应的文件拷贝到对应位置"><a href="#将-nord-and-light-中对应的文件拷贝到对应位置" class="headerlink" title="将 nord-and-light 中对应的文件拷贝到对应位置"></a>将 <code>nord-and-light</code> 中对应的文件拷贝到对应位置</h1>]]></content>
+      <categories>
+        <category>arch - config</category>
+      </categories>
+      <tags>
+        <tag>xmonad</tag>
       </tags>
   </entry>
   <entry>
@@ -666,6 +769,25 @@ Bob--&gt;&gt;John: Jolly good!
       </categories>
       <tags>
         <tag>hexo文章阅读统计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用nvm来管理nodejs</title>
+    <url>/posts/8f14feec.html</url>
+    <content><![CDATA[<h1 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h1><p><code>nvm</code> 是一个node.js的版本管理工具，让每个用户，所有POSIX-compliant SHELL可以使用不同版本的node</p>
+<mark class="label warning">nvm不支持`fish shell`，后续也没有打算</mark>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="在安装-nvm-之前移除已安装的node"><a href="#在安装-nvm-之前移除已安装的node" class="headerlink" title="在安装 nvm 之前移除已安装的node"></a>在安装 <code>nvm</code> 之前移除已安装的node</h3><h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><ol>
+<li><code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash</code><br>or</li>
+<li><code>wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash</code></li>
+</ol>
+<h3 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h3><p>在 <code>.zshrc</code> or <code>.profile</code> or <code>.bashrc</code> 中添加一下语句</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">export NVM_DIR=&quot;$([ -z &quot;$&#123;XDG_CONFIG_HOME-&#125;&quot; ] &amp;&amp; printf %s &quot;$&#123;HOME&#125;/.nvm&quot; || printf %s &quot;$&#123;XDG_CONFIG_HOME&#125;/nvm&quot;)&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR/nvm.sh&quot; # This loads nvm</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>nodejs</category>
+      </categories>
+      <tags>
+        <tag>nodejs</tag>
       </tags>
   </entry>
   <entry>
