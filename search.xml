@@ -259,6 +259,81 @@
       </tags>
   </entry>
   <entry>
+    <title>Kwin</title>
+    <url>/posts/22dae244.html</url>
+    <content><![CDATA[<div class="note warning"><p>这套快捷键仅适用于 <code>HHKB</code> 键盘配列!!</p>
+</div>
+<h1 id="利用-Kwin-krohnkite-实现类似-xmonad-的体验"><a href="#利用-Kwin-krohnkite-实现类似-xmonad-的体验" class="headerlink" title="利用 Kwin``krohnkite 实现类似 xmonad 的体验"></a>利用 <code>Kwin``krohnkite</code> 实现类似 <code>xmonad</code> 的体验</h1><p><code>krohnkite</code> 相对其他脚本已经是比较完善了</p>
+<h2 id="krohnkite基础"><a href="#krohnkite基础" class="headerlink" title="krohnkite基础"></a>krohnkite基础</h2><h3 id="改变视窗大小比例"><a href="#改变视窗大小比例" class="headerlink" title="改变视窗大小比例"></a>改变视窗大小比例</h3><div class="note info"><p>第一种:</p>
+<ol>
+<li>left: <code>&lt;meta + h&gt;</code></li>
+<li>righ: <code>&lt;meta + l&gt;</code><br>第二种:</li>
+<li>left: <code>&lt;meta + Alt + h&gt;</code></li>
+<li>right: <code>&lt;meta + Alt + l&gt;</code></li>
+<li>up: <code>&lt;meta + Alt + k&gt;</code></li>
+<li>down: <code>&lt;meta + Alt + j&gt;</code></li>
+</ol>
+</div>
+
+<div class="note "><p>这两种方法在普通模式下没有区别<br>但是在 <mark class="label primary"><code>float</code>模式下,分离出浮窗的情况下，第一种可以控制未分离的视窗大小，第二种可以单独控制分离出的浮窗的大小</mark></p>
+</div>
+
+<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>它有 <code>6</code> 种完善的布局，可以很好的适应各种需求：</p>
+<div class="note info"><ol>
+<li><mark class="label ">monocle:</mark> <code>&lt;Alt + !&gt;</code></li>
+<li><mark class="label ">Tile[0]:</mark> <code>&lt;Alt + @&gt;</code></li>
+<li><mark class="label ">Three-cloumn[1]:</mark> <code>&lt;Alt + #&gt;</code></li>
+<li><mark class="label ">Quarter:</mark> <code>&lt;Alt + $&gt;</code></li>
+<li><mark class="label ">Spread:</mark> <code>&lt;Alt + %&gt;</code></li>
+<li><mark class="label ">Stair:</mark> <code>&lt;Alt + ^&gt;</code></li>
+</ol>
+</div>
+
+<h3 id="改变布局"><a href="#改变布局" class="headerlink" title="改变布局"></a>改变布局</h3><ol>
+<li>下一个布局: <code>&lt;ctrl + space&gt;</code></li>
+<li>上一个布局: <code>&lt;ctrl + shift + space&gt;</code></li>
+</ol>
+<p>改变当前布局视窗排列</p>
+<div class="note info"><ol>
+<li>move up/prev: <code>&lt;meta + Alt + shift + j&gt;</code></li>
+<li>move down/next: <code>&lt;meta + Alt + shift + k&gt;</code></li>
+<li>move right: <code>&lt;meta + Alt + shift + l&gt;</code></li>
+<li>move left: <code>&lt;meta + Alt + shift + h&gt;</code></li>
+</ol>
+</div>
+
+
+<h3 id="布局变化"><a href="#布局变化" class="headerlink" title="布局变化"></a>布局变化</h3><h4 id="其中-master-的窗格的数量可以Increase或Decrease"><a href="#其中-master-的窗格的数量可以Increase或Decrease" class="headerlink" title="其中 master 的窗格的数量可以Increase或Decrease"></a>其中<mark class="label ">tile 和 three-cloumn</mark> <code>master</code> 的窗格的数量可以<code>Increase</code>或<code>Decrease</code></h4><p>我把它设置为了</p>
+<ul>
+<li><mark class="label primay">Decrease:</mark> `<num + ->`</li>
+<li><mark class="label primay">Increase:</mark> `<num + +>`</li>
+</ul>
+<h3 id="浮动窗口"><a href="#浮动窗口" class="headerlink" title="浮动窗口"></a>浮动窗口</h3><p>单个窗口: <code>&lt;Alt + f&gt;</code><br>所有窗口: <code>&lt;Alt + shift + f&gt;</code></p>
+<h2 id="kwin"><a href="#kwin" class="headerlink" title="kwin"></a>kwin</h2><h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>close window: <code>&lt;ctrl + Alt + x&gt;</code><br>full windows: <code>&lt;F11&gt;</code><br>minnimum windows: <code>&lt;F12&gt;</code><br>卷起视窗: <code>&lt;ctrl + F12&gt;</code><br>垂直最大化: <code>&lt;ctrl + F11&gt;</code></p>
+<p>放大桌面: <code>&lt;meta + =&gt;</code><br>缩小桌面: <code>&lt;meta + -&gt;</code><br>接触放大或缩小状态: <code>&lt;meta + 0&gt;</code></p>
+<ul>
+<li>视角移动:<br>左: <code>&lt;meta + ctrl + left&gt;</code><br>右: <code>&lt;meta + ctrl + right&gt;</code><br>上: <code>&lt;meta + ctrl + up&gt;</code><br>下: <code>&lt;meta + ctrl + down&gt;</code></li>
+</ul>
+<p>当前视窗在所有桌面可见: <code>&lt;meta + Alt + A&gt;</code></p>
+<p>显示桌面: <code>&lt;meta + d&gt;</code><br>显示所有桌面: <code>&lt;meta + shift + d&gt;</code><br>手动更改视窗大小: <code>&lt;meta + shift + m&gt;</code><br>手动杀死视窗: <code>&lt;ctrl + Alt + Esc&gt;</code><br>激活请求注意的视窗: <code>&lt;ctrl + Alt + a&gt;</code></p>
+<p>移动鼠标到屏幕中央: <code>&lt;meta + F6&gt;</code><br>移动鼠标到屏幕右上角: <code>&lt;meta + F5&gt;</code></p>
+<p>视窗的操作菜单: <code>&lt;Alt + F3&gt;</code><br>视窗菜单栏隐藏或展开: <code>&lt;Alt + F2&gt;</code></p>
+<p>窗口置前或置后: <code>&lt;meta + Alt + n&gt;</code></p>
+<h3 id="切换桌面"><a href="#切换桌面" class="headerlink" title="切换桌面"></a>切换桌面</h3><p>上一个桌面: <code>&lt;meta + Alt + shift + d&gt;</code><br>下一个桌面: <code>&lt;meta + Alt + d&gt;</code><br>上方桌面: <code>&lt;meta + up&gt;</code><br>下方桌面: <code>&lt;meta + down&gt;</code><br>左边桌面: <code>&lt;meta + left&gt;</code><br>右方桌面: <code>&lt;meta + right&gt;</code></p>
+<p>桌面1: <code>&lt;meta + F1&gt;</code><br>桌面2: <code>&lt;meta + F2&gt;</code><br>桌面3: <code>&lt;meta + F3&gt;</code></p>
+<h3 id="移动视窗焦点"><a href="#移动视窗焦点" class="headerlink" title="移动视窗焦点"></a>移动视窗焦点</h3><p>左: <code>&lt;ctrl + *&gt;</code><br>右: <code>&lt;ctrl + &lt;PageUp&gt;&gt;</code><br>上: <code>&lt;ctrl + &lt;Home&gt;&gt;</code><br>下: <code>&lt;ctrl + /&gt;</code></p>
+<h3 id="移动视窗"><a href="#移动视窗" class="headerlink" title="移动视窗"></a>移动视窗</h3><p>左: <code>&lt;ctrl + Alt + h&gt;</code><br>右: <code>&lt;ctrl + Alt + l&gt;</code><br>上: <code>&lt;ctrl + Alt + k&gt;</code><br>下: <code>&lt;ctrl + Alt + j&gt;</code></p>
+<h3 id="视窗转移到其他桌面"><a href="#视窗转移到其他桌面" class="headerlink" title="视窗转移到其他桌面"></a>视窗转移到其他桌面</h3><p>窗口上移一个桌面: <code>&lt;meta + Alt + shift + up&gt;</code><br>窗口下移一个桌面: <code>&lt;meta + Alt + shift + down&gt;</code><br>窗口左移一个桌面: <code>&lt;meta + Alt + shift + left&gt;</code><br>窗口右移一个桌面: <code>&lt;meta + Alt + shift + right&gt;</code></p>
+]]></content>
+      <categories>
+        <category>arch</category>
+        <category>kwin</category>
+      </categories>
+      <tags>
+        <tag>kwin</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Netword control protocol</title>
     <url>/posts/c4009546.html</url>
     <content><![CDATA[<h1 id="Net-Netword-control-protocol"><a href="#Net-Netword-control-protocol" class="headerlink" title="Net(Netword control protocol)"></a>Net(Netword control protocol)</h1><p>网络控制协议</p>
@@ -501,6 +576,11 @@
       </tags>
   </entry>
   <entry>
+    <title>git</title>
+    <url>/posts/518e617c.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>ln</title>
     <url>/posts/229b7a0b.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -546,34 +626,36 @@
 </ul>
 <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p><code>git clone https://github.com/ayamir/nord-and-light.git</code><br><code>cd nord-and-light</code></p>
 <div class="note "><h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><ul>
-<li>xsettingsd: 在运行时热切换全局GTK主题</li>
-<li>feh: 设置壁纸</li>
-<li>fish: 需要的shell</li>
-<li>dunst: 守护进程</li>
-<li>mako(wayland): wayland守护进程</li>
-<li>alacritty &amp;&amp; kitty: 模拟终端, 支持在运行时切换配置</li>
-<li>rofi / dmenu: 程序启动器</li>
-<li>wofi(wayland): wayland的程序启动器</li>
-<li>zathura: PDF阅读器</li>
-<li>Global GTK2/3 theme<ul>
+<li>xsettingsd: 在运行时热切换全局GTK主题 [yes]</li>
+<li>feh: 设置壁纸 [yes]</li>
+<li>fish: 需要的shell [yes]</li>
+<li>dunst: 守护进程 [yes]</li>
+<li>mako(wayland): wayland守护进程 [yes]</li>
+<li>alacritty &amp;&amp; kitty: 模拟终端, 支持在运行时切换配置 [yes]</li>
+<li>rofi / dmenu: 程序启动器 [yes]</li>
+<li>wofi(wayland): wayland的程序启动器 [yes]</li>
+<li>zathura: PDF阅读器 [不需要]</li>
+<li>Global GTK2/3 theme [no]<ul>
 <li>Nordic</li>
 <li>Orchis-light</li>
 </ul>
 </li>
 </ul>
 <h3 id="其他可选项"><a href="#其他可选项" class="headerlink" title="其他可选项"></a>其他可选项</h3><ul>
-<li>firefox</li>
-<li>vim</li>
-<li>doom emacs<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/hlissner/doom-emacs ~/.emacs.d</span><br><span class="line">~/.emacs.d/bin/doom install</span><br></pre></td></tr></table></figure>
+<li>firefox [yes]</li>
+<li>vim [yes]</li>
+<li>doom emacs [yes]<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/hlissner/doom-emacs ~/.emacs.d</span><br><span class="line">~/.emacs.d/bin/doom install</span><br></pre></td></tr></table></figure>
 <div class="note "><p>我直接用 <code>doom install</code>还是有点问题的，它提示我 <mark class="label warning"><code>connot load files</code></mark><br>如果你也有同样情况可以用 <code>doom sync</code> 试一下, 老是下载不下来插件，可以开代理试下</p>
 </div></li>
 </ul>
 <ul>
 <li>vscode</li>
 <li>sublime</li>
-<li>fcitx5</div></li>
+<li>fcitx5 [yes]</div></li>
 </ul>
-<h1 id="将-nord-and-light-中对应的文件拷贝到对应位置"><a href="#将-nord-and-light-中对应的文件拷贝到对应位置" class="headerlink" title="将 nord-and-light 中对应的文件拷贝到对应位置"></a>将 <code>nord-and-light</code> 中对应的文件拷贝到对应位置</h1>]]></content>
+<h1 id="将-nord-and-light-中对应的文件拷贝到对应位置"><a href="#将-nord-and-light-中对应的文件拷贝到对应位置" class="headerlink" title="将 nord-and-light 中对应的文件拷贝到对应位置"></a>将 <code>nord-and-light</code> 中对应的文件拷贝到对应位置</h1><div class="note warning"><p>没有waybar, <code>.config</code> 文件多出一个文件夹?<br>picom 没装</p>
+</div>
+]]></content>
       <categories>
         <category>arch - config</category>
       </categories>
@@ -649,6 +731,16 @@ Bob--&gt;&gt;John: Jolly good!
       </tags>
   </entry>
   <entry>
+    <title>xmonad</title>
+    <url>/posts/2024632b.html</url>
+    <content><![CDATA[<h2 id="Arch-linux-wiki"><a href="#Arch-linux-wiki" class="headerlink" title="Arch linux wiki"></a>Arch linux wiki</h2><h3 id="install"><a href="#install" class="headerlink" title="install"></a>install</h3><p>need two packages:<br><code>xmonad-git</code><br><code>xmonad-contrib-git</code></p>
+]]></content>
+      <categories>
+        <category>arch</category>
+        <category>xmonad</category>
+      </categories>
+  </entry>
+  <entry>
     <title>vim+nivm+nvide</title>
     <url>/posts/98f28abb.html</url>
     <content><![CDATA[<h1 id="关于neovide-中文输入的issue"><a href="#关于neovide-中文输入的issue" class="headerlink" title="关于neovide 中文输入的issue"></a>关于neovide 中文输入的issue</h1><p><a href="https://github.com/neovide/neovide/issues/445#issue-783216919">#445</a><br>已经有人提了，但是目前还没解决.</p>
@@ -661,16 +753,6 @@ Bob--&gt;&gt;John: Jolly good!
         <tag>vim</tag>
         <tag>neovide</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>xmonad</title>
-    <url>/posts/2024632b.html</url>
-    <content><![CDATA[<h2 id="Arch-linux-wiki"><a href="#Arch-linux-wiki" class="headerlink" title="Arch linux wiki"></a>Arch linux wiki</h2><h3 id="install"><a href="#install" class="headerlink" title="install"></a>install</h3><p>need two packages:<br><code>xmonad-git</code><br><code>xmonad-contrib-git</code></p>
-]]></content>
-      <categories>
-        <category>arch</category>
-        <category>xmonad</category>
-      </categories>
   </entry>
   <entry>
     <title>一本书读懂TCP/IP</title>
