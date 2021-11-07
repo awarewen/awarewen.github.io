@@ -22,6 +22,20 @@
       </categories>
   </entry>
   <entry>
+    <title>Arch linux PPPOE</title>
+    <url>/posts/4ff942cb.html</url>
+    <content><![CDATA[<h1 id="ppp-拨号方案"><a href="#ppp-拨号方案" class="headerlink" title="ppp 拨号方案"></a><code>ppp</code> 拨号方案</h1><h2 id="依靠-ppp-进行拨号上网"><a href="#依靠-ppp-进行拨号上网" class="headerlink" title="依靠 ppp 进行拨号上网"></a>依靠 <code>ppp</code> 进行拨号上网</h2><h3 id="安装-ppp"><a href="#安装-ppp" class="headerlink" title="安装 ppp"></a>安装 <code>ppp</code></h3><p><code>sudo pacman -S ppp</code></p>
+<h2 id="ppp-拨号需要先将对应的网卡-turn-down"><a href="#ppp-拨号需要先将对应的网卡-turn-down" class="headerlink" title="ppp 拨号需要先将对应的网卡 turn down"></a><code>ppp</code> 拨号需要先将对应的网卡 turn down</h2><h3 id="查看网卡名称"><a href="#查看网卡名称" class="headerlink" title="查看网卡名称"></a>查看网卡名称</h3><p>nmcli device show </p>
+<h3 id="使用默认示例"><a href="#使用默认示例" class="headerlink" title="使用默认示例"></a>使用默认示例</h3><p><code>cp /etc/netctl/examples/pppoe /etc/netctl/pppoe</code></p>
+<h2 id="修改基础信息"><a href="#修改基础信息" class="headerlink" title="修改基础信息"></a>修改基础信息</h2>]]></content>
+      <categories>
+        <category>pppoe</category>
+      </categories>
+      <tags>
+        <tag>arch</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Arch 挂起后黑屏</title>
     <url>/posts/6c736e1c.html</url>
     <content><![CDATA[<div class="note "><p>一个困扰许久的问题:<br>系统在锁屏后挂起，但是用鼠标和键盘经常无法唤起桌面</p>
@@ -653,9 +667,10 @@
 <li>sublime</li>
 <li>fcitx5 [yes]</div></li>
 </ul>
-<h1 id="将-nord-and-light-中对应的文件拷贝到对应位置"><a href="#将-nord-and-light-中对应的文件拷贝到对应位置" class="headerlink" title="将 nord-and-light 中对应的文件拷贝到对应位置"></a>将 <code>nord-and-light</code> 中对应的文件拷贝到对应位置</h1><div class="note warning"><p>没有waybar, <code>.config</code> 文件多出一个文件夹?<br>picom 没装</p>
+<h1 id="将-nord-and-light-中对应的文件拷贝到对应位置"><a href="#将-nord-and-light-中对应的文件拷贝到对应位置" class="headerlink" title="将 nord-and-light 中对应的文件拷贝到对应位置"></a>将 <code>nord-and-light</code> 中对应的文件拷贝到对应位置</h1><div class="note warning"><p>waybar [yes]<br>picom [yes]</p>
 </div>
-]]></content>
+
+<h1 id="xmonad-启动"><a href="#xmonad-启动" class="headerlink" title="xmonad 启动"></a>xmonad 启动</h1>]]></content>
       <categories>
         <category>arch - config</category>
       </categories>
@@ -731,16 +746,6 @@ Bob--&gt;&gt;John: Jolly good!
       </tags>
   </entry>
   <entry>
-    <title>xmonad</title>
-    <url>/posts/2024632b.html</url>
-    <content><![CDATA[<h2 id="Arch-linux-wiki"><a href="#Arch-linux-wiki" class="headerlink" title="Arch linux wiki"></a>Arch linux wiki</h2><h3 id="install"><a href="#install" class="headerlink" title="install"></a>install</h3><p>need two packages:<br><code>xmonad-git</code><br><code>xmonad-contrib-git</code></p>
-]]></content>
-      <categories>
-        <category>arch</category>
-        <category>xmonad</category>
-      </categories>
-  </entry>
-  <entry>
     <title>vim+nivm+nvide</title>
     <url>/posts/98f28abb.html</url>
     <content><![CDATA[<h1 id="关于neovide-中文输入的issue"><a href="#关于neovide-中文输入的issue" class="headerlink" title="关于neovide 中文输入的issue"></a>关于neovide 中文输入的issue</h1><p><a href="https://github.com/neovide/neovide/issues/445#issue-783216919">#445</a><br>已经有人提了，但是目前还没解决.</p>
@@ -753,6 +758,16 @@ Bob--&gt;&gt;John: Jolly good!
         <tag>vim</tag>
         <tag>neovide</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>xmonad</title>
+    <url>/posts/2024632b.html</url>
+    <content><![CDATA[<h2 id="Arch-linux-wiki"><a href="#Arch-linux-wiki" class="headerlink" title="Arch linux wiki"></a>Arch linux wiki</h2><h3 id="install"><a href="#install" class="headerlink" title="install"></a>install</h3><p>need two packages:<br><code>xmonad-git</code><br><code>xmonad-contrib-git</code></p>
+]]></content>
+      <categories>
+        <category>arch</category>
+        <category>xmonad</category>
+      </categories>
   </entry>
   <entry>
     <title>一本书读懂TCP/IP</title>
@@ -957,5 +972,17 @@ Bob--&gt;&gt;John: Jolly good!
         <category>读书</category>
         <category>正则表达式</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Arch linux Add a new SDD mobile HD</title>
+    <url>/posts/16b5c004.html</url>
+    <content><![CDATA[<h2 id="Arch-linux-插入移动硬盘不显示，解决方案"><a href="#Arch-linux-插入移动硬盘不显示，解决方案" class="headerlink" title="Arch linux 插入移动硬盘不显示，解决方案"></a>Arch linux 插入移动硬盘不显示，解决方案</h2><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+      <categories>
+        <category>arch</category>
+      </categories>
+      <tags>
+        <tag>arch</tag>
+        <tag>add a new SDD HD</tag>
+      </tags>
   </entry>
 </search>
